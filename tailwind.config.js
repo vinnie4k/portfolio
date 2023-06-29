@@ -6,10 +6,12 @@ export default {
       colors: {
         appdev: "#CA4238",
         black: "#0F0F0F",
+        cornell: "#D41F1F",
         gray: "#848482",
         offWhite1: "#F8F8F8",
         offWhite2: "#F0F0F0",
         primary: "#075DF8",
+        twitch: "#6441A5",
         white: "#FDFDFD",
       },
       fontFamily: {

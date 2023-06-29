@@ -7,3 +7,9 @@
     @apply hover:cursor-pointer hover:opacity-80 transition ease-in;
   }
 }
+
+@layer components {
+  .underline-mobile {
+    @apply bg-primary h-[2px] w-[84px];
+  }
+}

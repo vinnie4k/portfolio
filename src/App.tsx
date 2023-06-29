@@ -1,3 +1,4 @@
+import About from "./pages/home/About";
 import DevSkills from "./pages/home/DevSkills";
 import Landing from "./pages/home/Landing";
 import NavBar from "./components/NavBar";
@@ -13,6 +14,7 @@ function App() {
         <DevSkills />
         <TechSkills />
         <Work />
+        <About />
       </div>
     </div>
   );
