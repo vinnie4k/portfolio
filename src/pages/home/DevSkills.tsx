@@ -3,7 +3,7 @@ import webDev from "/src/assets/web_dev.png";
 
 function DevSkills() {
   return (
-    <>
+    <div className="flex flex-col gap-16">
       <div>
         <div className="mt-24">
           <img
@@ -19,7 +19,7 @@ function DevSkills() {
         </p>
       </div>
 
-      <div className="pt-16">
+      <div>
         <div className="mt-24">
           <img
             src={iosDev}
@@ -33,7 +33,7 @@ function DevSkills() {
           using Swift and Xcode.
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
