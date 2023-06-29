@@ -3,9 +3,9 @@ import webDev from "/src/assets/web_dev.png";
 
 function DevSkills() {
   return (
-    <div className="flex flex-col gap-16 mt-[-96px]">
+    <div className="flex flex-col gap-16">
       <div>
-        <div className="mt-24">
+        <div>
           <img
             src={webDev}
             alt="Image of a screen doing web development"
@@ -20,7 +20,7 @@ function DevSkills() {
       </div>
 
       <div>
-        <div className="mt-24">
+        <div className="mt-16">
           <img
             src={iosDev}
             alt="Image of a screen doing iOS development"
