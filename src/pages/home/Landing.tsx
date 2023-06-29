@@ -2,7 +2,7 @@ import profile from "/src/assets/profile.png";
 
 function Landing() {
   return (
-    <div className="h-[calc(100vh-80px)] flex items-center">
+    <div className="h-[calc(100vh-80px)] flex items-center justify-center">
       <div className="flex flex-col text-center">
         <img
           src={profile}

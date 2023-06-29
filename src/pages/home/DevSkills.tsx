@@ -5,13 +5,11 @@ function DevSkills() {
   return (
     <div className="flex flex-col gap-16">
       <div>
-        <div>
-          <img
-            src={webDev}
-            alt="Image of a screen doing web development"
-            className="h-56 mx-auto"
-          />
-        </div>
+        <img
+          src={webDev}
+          alt="Image of a screen doing web development"
+          className="h-56 mx-auto"
+        />
         <h2 className="text-3xl font-bold pt-8">Web Development</h2>
         <p className="text-base text-gray pt-2">
           Proficient in creating full-stack web applications using HTML/CSS/JS,
@@ -20,13 +18,11 @@ function DevSkills() {
       </div>
 
       <div>
-        <div className="mt-16">
-          <img
-            src={iosDev}
-            alt="Image of a screen doing iOS development"
-            className="h-56 mx-auto"
-          />
-        </div>
+        <img
+          src={iosDev}
+          alt="Image of a screen doing iOS development"
+          className="h-56 mx-auto mt-16"
+        />
         <h2 className="text-3xl font-bold pt-8">iOS Development</h2>
         <p className="text-base text-gray pt-2">
           Experienced in developing and publishing full-stack iOS applications
