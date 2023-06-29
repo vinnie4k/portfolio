@@ -15,7 +15,7 @@ function DevSkills() {
         <h2 className="text-3xl font-bold pt-8">Web Development</h2>
         <p className="text-base text-gray pt-2">
           Proficient in creating full-stack web applications using HTML/CSS/JS,
-          ReactJS and NodeJS.
+          ReactJS, Tailwind CSS and NodeJS.
         </p>
       </div>
 
