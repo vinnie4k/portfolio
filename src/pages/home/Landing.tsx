@@ -6,11 +6,11 @@ function Landing() {
       <div className="flex flex-col text-center">
         <img
           src={profile}
-          alt="profile"
-          className="w-[200px] mx-auto pb-[32px]"
+          alt="Image of Vin Bui"
+          className="w-52 mx-auto pb-8"
         />
-        <h1 className="font-bold text-[36px] pb-[8px]">Hi. I'm Vin.</h1>
-        <p className="font-regular text-[16px] text-gray">
+        <h1 className="font-bold text-4xl pb-2">Hi. I'm Vin.</h1>
+        <p className="text-base text-gray">
           A student and full-stack developer with a serious passion for
           improving user experience and developing new technologies. Currently
           developing for{" "}

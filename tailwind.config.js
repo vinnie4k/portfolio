@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         rhdisplay: ["Red Hat Display", "sans-serif"],
       },
+      fontSize: {
+        "3xl": "2rem",
+      },
     },
   },
   plugins: [],

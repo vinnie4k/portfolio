@@ -4,8 +4,8 @@ import { useState } from "react";
 
 function NavBar() {
   return (
-    <div className="py-[24px] flex flex-row justify-between items-center">
-      <img src={logo} alt="logo" className="h-8" />
+    <div className="py-6 flex flex-row justify-between items-center">
+      <img src={logo} alt="Vin Bui's Logo" className="h-8" />
       <FaBars size={24} />
     </div>
   );
