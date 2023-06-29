@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .url-link {
+    @apply hover:cursor-pointer hover:opacity-80 transition ease-in;
+  }
+}

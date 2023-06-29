@@ -1,10 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import NavBar from "./components/NavBar";
+import Landing from "./pages/home/Landing";
 
 function App() {
   return (
-    <div></div>
-  )
+    <div className="text-black font-rhdisplay bg-white px-[32px]">
+      <NavBar />
+      <Landing />
+    </div>
+  );
 }
 
-export default App
+export default App;
