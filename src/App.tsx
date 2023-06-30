@@ -1,4 +1,5 @@
 import About from "./pages/home/About";
+import Connect from "./pages/home/Connect";
 import DevSkills from "./pages/home/DevSkills";
 import Landing from "./pages/home/Landing";
 import NavBar from "./components/NavBar";
@@ -17,6 +18,7 @@ function App() {
         <Work />
         <About />
         <RecentPosts />
+        <Connect />
       </div>
     </div>
   );
