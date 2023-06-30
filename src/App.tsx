@@ -1,4 +1,5 @@
 import About from "./pages/home/About";
+import Footer from "./components/Footer";
 import Connect from "./pages/home/Connect";
 import DevSkills from "./pages/home/DevSkills";
 import Landing from "./pages/home/Landing";
@@ -20,6 +21,7 @@ function App() {
         <RecentPosts />
         <Connect />
       </div>
+      <Footer />
     </div>
   );
 }

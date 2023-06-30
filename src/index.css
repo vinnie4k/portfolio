@@ -13,3 +13,9 @@
     @apply bg-primary h-[2px] w-[84px];
   }
 }
+
+@layer components {
+  .footer-icon {
+    @apply p-2 border-2 hover:cursor-pointer hover:text-linkedin hover:translate-y-[-6px] transition ease-in duration-[250ms];
+  }
+}
