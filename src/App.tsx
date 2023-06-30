@@ -4,6 +4,7 @@ import Landing from "./pages/home/Landing";
 import NavBar from "./components/NavBar";
 import TechSkills from "./pages/home/TechSkills";
 import Work from "./pages/home/Work";
+import RecentPosts from "./pages/home/RecentPosts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <TechSkills />
         <Work />
         <About />
+        <RecentPosts />
       </div>
     </div>
   );
