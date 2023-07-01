@@ -1,26 +1,23 @@
-import About from "./pages/home/About";
+import Blog from "./pages/blog/Blog";
 import Footer from "./components/Footer";
-import Connect from "./pages/home/Connect";
-import DevSkills from "./pages/home/DevSkills";
-import Landing from "./pages/home/Landing";
+import Home from "./pages/home/Home";
 import NavBar from "./components/NavBar";
-import TechSkills from "./pages/home/TechSkills";
-import Work from "./pages/home/Work";
-import RecentPosts from "./pages/home/RecentPosts";
 
 function App() {
+  let component;
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home />;
+      break;
+    case "/blog":
+      component = <Blog />;
+      break;
+  }
+
   return (
     <div className="text-black font-rhdisplay bg-white px-[32px]">
       <NavBar />
-      <div className="flex flex-col gap-24">
-        <Landing />
-        <DevSkills />
-        <TechSkills />
-        <Work />
-        <About />
-        <RecentPosts />
-        <Connect />
-      </div>
+      {component}
       <Footer />
     </div>
   );
