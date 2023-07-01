@@ -2,7 +2,28 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        appdev: "#CA4238",
+        black: "#0F0F0F",
+        cornell: "#D41F1F",
+        github: "#333",
+        gray: "#848482",
+        instagram: "#C13584",
+        linkedin: "#0072b1",
+        offWhite1: "#F8F8F8",
+        offWhite2: "#F0F0F0",
+        primary: "#075DF8",
+        twitch: "#6441A5",
+        white: "#FDFDFD",
+      },
+      fontFamily: {
+        rhdisplay: ["Red Hat Display", "sans-serif"],
+      },
+      fontSize: {
+        "3xl": "2rem",
+      },
+    },
   },
   plugins: [],
 };
