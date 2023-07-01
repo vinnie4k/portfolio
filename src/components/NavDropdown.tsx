@@ -1,26 +1,38 @@
+import { Link, useMatch, useResolvedPath, useNavigate } from "react-router-dom";
+
 function NavDropdown() {
+  const navigate = useNavigate();
+
+  const refreshPage = () => {
+    navigate(0);
+  };
+
   return (
     <div className="py-6 absolute w-full bg-white">
       <ul className="flex flex-col items-center text-center gap-4">
-        <li className="font-bold text-base">
-          <a
-            href="/"
+        <li className="font-bold text-base" onClick={refreshPage}>
+          <Link
+            to="/"
             className={`${
-              window.location.pathname === "/" ? "text-primary" : null
+              useMatch({ path: useResolvedPath("/").pathname, end: true })
+                ? "text-primary"
+                : null
             }`}
           >
             Work
-          </a>
+          </Link>
         </li>
-        <li className="font-bold text-base">
-          <a
-            href="/blog"
+        <li className="font-bold text-base" onClick={refreshPage}>
+          <Link
+            to="/blog"
             className={`${
-              window.location.pathname === "/blog" ? "text-primary" : null
+              useMatch({ path: useResolvedPath("/blog").pathname, end: true })
+                ? "text-primary"
+                : null
             }`}
           >
             Blog{" "}
-          </a>
+          </Link>
         </li>
         <li className="font-bold text-base">
           <a>Resume</a>
