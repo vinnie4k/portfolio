@@ -43,3 +43,9 @@
     @apply mt-3;
   }
 }
+
+@layer components {
+  .cell-link {
+    @apply hover:cursor-pointer hover:scale-105 transition ease-in-out duration-500;
+  }
+}

@@ -12,10 +12,26 @@ function Work() {
         development.
       </p>
       <div className="flex flex-col gap-16">
-        <img src={grabbit} alt="Image of Grabbit" className="w-72 mx-auto" />
-        <img src={volume} alt="Image of Volume" className="w-72 mx-auto" />
-        <img src={scribbly} alt="Image of Scribbly" className="w-72 mx-auto" />
-        <img src={savvy} alt="Image of Savvy" className="w-72 mx-auto" />
+        <img
+          src={grabbit}
+          alt="Image of Grabbit"
+          className="w-72 mx-auto cell-link"
+        />
+        <img
+          src={volume}
+          alt="Image of Volume"
+          className="w-72 mx-auto cell-link"
+        />
+        <img
+          src={scribbly}
+          alt="Image of Scribbly"
+          className="w-72 mx-auto cell-link"
+        />
+        <img
+          src={savvy}
+          alt="Image of Savvy"
+          className="w-72 mx-auto cell-link"
+        />
       </div>
     </div>
   );

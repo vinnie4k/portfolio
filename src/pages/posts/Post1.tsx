@@ -124,11 +124,13 @@ function Post1() {
           date="June 12"
           title="Data Types"
           body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
+          destination="/blog/data-types"
         />
         <PostCell
           date="June 24"
           title="Operators"
           body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
+          destination="/blog/operators"
         />
       </div>
     </div>
