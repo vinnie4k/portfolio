@@ -22,6 +22,7 @@ export default {
         rhdisplay: ["Red Hat Display", "sans-serif"],
       },
       fontSize: {
+        "2.5xl": "1.75rem",
         "3xl": "2rem",
       },
     },

@@ -11,7 +11,7 @@ import Post2 from "./pages/posts/Post2";
 
 function App() {
   return (
-    <div className="text-black font-rhdisplay bg-white px-[32px]">
+    <div className="text-black font-rhdisplay bg-white max-sm:px-[32px] sm:px-[64px]">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>

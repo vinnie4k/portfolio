@@ -3,11 +3,13 @@ import PostCell from "/src/components/PostCell";
 function RecentPosts() {
   return (
     <div>
-      <h2 className="text-3xl font-bold pb-2 text-center">Recent Posts</h2>
-      <p className="text-gray pb-16 text-center">
+      <h2 className="text-3xl font-bold pb-2 text-center lg:text-5xl">
+        Recent Posts
+      </h2>
+      <p className="text-gray pb-16 text-center lg:text-xl">
         Check out my latest stories and ideas.
       </p>
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col justify-center gap-16 lg:flex-row lg:gap-8">
         <PostCell
           date="June 1"
           title="Variables and Constants"
