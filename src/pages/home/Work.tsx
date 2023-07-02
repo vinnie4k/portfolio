@@ -12,11 +12,13 @@ function Work() {
         development.
       </p>
       <div className="flex flex-col gap-16">
-        <img
-          src={grabbit}
-          alt="Image of Grabbit"
-          className="w-72 mx-auto cell-link"
-        />
+        <a href="/work/grabbit">
+          <img
+            src={grabbit}
+            alt="Image of Grabbit"
+            className="w-72 mx-auto cell-link"
+          />
+        </a>
         <img
           src={volume}
           alt="Image of Volume"
