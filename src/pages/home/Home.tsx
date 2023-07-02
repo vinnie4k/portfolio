@@ -8,7 +8,7 @@ import RecentPosts from "/src/pages/home/RecentPosts";
 
 function Home() {
   return (
-    <div className="flex flex-col gap-24">
+    <div className="flex flex-col gap-24 sm:gap-[120px] lg:w-[1000px] lg:mx-auto">
       <Landing />
       <DevSkills />
       <TechSkills />

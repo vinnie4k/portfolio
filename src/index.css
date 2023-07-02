@@ -49,3 +49,9 @@
     @apply hover:cursor-pointer hover:scale-105 transition ease-in-out duration-500;
   }
 }
+
+@layer components {
+  .underline-desktop {
+    @apply bg-primary h-[4px] w-[128px];
+  }
+}

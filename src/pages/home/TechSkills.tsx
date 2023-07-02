@@ -11,24 +11,56 @@ import swift from "/src/assets/tech/swift.png";
 
 function TechSkills() {
   return (
-    <div className="mx-[-32px] py-16 bg-offWhite1 flex flex-col gap-16">
-      <div className="flex flex-row justify-center gap-8">
+    <>
+      <div className="sm:hidden mx-[-32px] py-16 bg-offWhite1 flex flex-col gap-16">
+        <div className="flex flex-row justify-center gap-8">
+          <img src={sqlite} alt="SQLite Logo" className="w-12" />
+          <img src={java} alt="Java Logo" className="w-12" />
+          <img src={python} alt="Python Logo" className="w-12" />
+        </div>
+        <div className="flex flex-row justify-center gap-8">
+          <img src={swift} alt="Swift Logo" className="w-12" />
+          <img src={react} alt="React Logo" className="w-12" />
+          <img src={nodejs} alt="NodeJS Logo" className="w-12" />
+          <img src={express} alt="ExpressJS Logo" className="w-12" />
+        </div>
+        <div className="flex flex-row justify-center gap-8">
+          <img src={flask} alt="Flask Logo" className="w-12" />
+          <img src={firebase} alt="Firebase Logo" className="w-12" />
+          <img src={googlecloud} alt="Google Cloud Logo" className="w-12" />
+        </div>
+      </div>
+
+      <div className="max-sm:hidden lg:hidden mx-[-64px] py-16 bg-offWhite1 flex flex-col gap-16">
+        <div className="flex flex-row justify-center gap-16">
+          <img src={sqlite} alt="SQLite Logo" className="w-12" />
+          <img src={java} alt="Java Logo" className="w-12" />
+          <img src={python} alt="Python Logo" className="w-12" />
+          <img src={swift} alt="Swift Logo" className="w-12" />
+          <img src={react} alt="React Logo" className="w-12" />
+        </div>
+        <div className="flex flex-row justify-center gap-16">
+          <img src={nodejs} alt="NodeJS Logo" className="w-12" />
+          <img src={express} alt="ExpressJS Logo" className="w-12" />
+          <img src={flask} alt="Flask Logo" className="w-12" />
+          <img src={firebase} alt="Firebase Logo" className="w-12" />
+          <img src={googlecloud} alt="Google Cloud Logo" className="w-12" />
+        </div>
+      </div>
+
+      <div className="max-lg:hidden mx-[calc(calc(-100vw+1000px)/2)] py-24 px-16 bg-offWhite1 flex flex-row justify-between">
         <img src={sqlite} alt="SQLite Logo" className="w-12" />
         <img src={java} alt="Java Logo" className="w-12" />
         <img src={python} alt="Python Logo" className="w-12" />
-      </div>
-      <div className="flex flex-row justify-center gap-8">
         <img src={swift} alt="Swift Logo" className="w-12" />
         <img src={react} alt="React Logo" className="w-12" />
         <img src={nodejs} alt="NodeJS Logo" className="w-12" />
         <img src={express} alt="ExpressJS Logo" className="w-12" />
-      </div>
-      <div className="flex flex-row justify-center gap-8">
         <img src={flask} alt="Flask Logo" className="w-12" />
         <img src={firebase} alt="Firebase Logo" className="w-12" />
         <img src={googlecloud} alt="Google Cloud Logo" className="w-12" />
       </div>
-    </div>
+    </>
   );
 }
 
