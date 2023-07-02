@@ -19,3 +19,33 @@
     @apply p-2 border-2 hover:cursor-pointer hover:text-linkedin hover:translate-y-[-6px] transition ease-in duration-[250ms];
   }
 }
+
+@layer components {
+  .post-body-mobile {
+    @apply text-base;
+  }
+}
+
+@layer components {
+  .post-heading-mobile {
+    @apply font-bold text-3xl leading-[42px] mb-4;
+  }
+}
+
+@layer components {
+  .post-code {
+    @apply text-code font-bold;
+  }
+}
+
+@layer components {
+  .post-code-image-mobile {
+    @apply mt-3;
+  }
+}
+
+@layer components {
+  .cell-link {
+    @apply hover:cursor-pointer hover:scale-105 transition ease-in-out duration-500;
+  }
+}

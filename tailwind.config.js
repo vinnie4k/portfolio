@@ -6,6 +6,7 @@ export default {
       colors: {
         appdev: "#CA4238",
         black: "#0F0F0F",
+        code: "#CA4238",
         cornell: "#D41F1F",
         github: "#333",
         gray: "#848482",
