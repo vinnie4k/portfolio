@@ -25,13 +25,16 @@ function NavBar() {
           <img
             src={logo}
             alt="Vin Bui's Logo"
-            className="h-9 sm:h-10 lg:h-12"
+            className="h-9 sm:h-10 lg:h-12 cell-link"
           />
         </a>
 
         {/* Desktop Navigation */}
         <ul className="max-sm:hidden flex flex-row sm:gap-12 lg:gap-16">
-          <li className="font-bold lg:text-xl" onClick={refreshPage}>
+          <li
+            className="font-bold lg:text-xl cell-link hover:opacity-80"
+            onClick={refreshPage}
+          >
             <a
               href="/"
               className={`${
@@ -43,7 +46,10 @@ function NavBar() {
               Home
             </a>
           </li>
-          <li className="font-bold lg:text-xl" onClick={refreshPage}>
+          <li
+            className="font-bold lg:text-xl cell-link hover:opacity-80"
+            onClick={refreshPage}
+          >
             <a
               href="/blog"
               className={`${
@@ -58,7 +64,7 @@ function NavBar() {
               Blog{" "}
             </a>
           </li>
-          <li className="font-bold lg:text-xl">
+          <li className="font-bold lg:text-xl cell-link hover:opacity-80">
             <a>Resume</a>
           </li>
         </ul>

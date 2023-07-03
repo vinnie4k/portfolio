@@ -21,14 +21,14 @@
 }
 
 @layer components {
-  .post-body-mobile {
-    @apply text-base;
+  .post-body {
+    @apply text-base lg:text-[20px] lg:leading-[32px];
   }
 }
 
 @layer components {
-  .post-heading-mobile {
-    @apply font-bold text-3xl leading-[42px] mb-4;
+  .post-heading {
+    @apply font-bold text-3xl leading-[42px] mb-4 lg:text-[40px] lg:mb-8;
   }
 }
 
@@ -39,8 +39,8 @@
 }
 
 @layer components {
-  .post-code-image-mobile {
-    @apply mt-3;
+  .post-code-image {
+    @apply mt-3 lg:mt-6;
   }
 }
 
@@ -53,5 +53,11 @@
 @layer components {
   .underline-desktop {
     @apply bg-primary h-[4px] w-[128px];
+  }
+}
+
+@layer components {
+  .post-desktop-settings {
+    @apply lg:w-[1000px] lg:mx-auto lg:py-20 lg:gap-24;
   }
 }
