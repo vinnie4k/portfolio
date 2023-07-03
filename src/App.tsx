@@ -1,9 +1,14 @@
 import Blog from "./pages/blog/Blog";
 import Footer from "./components/Footer";
-import Grabbit from "./pages/work/Grabbit";
 import Home from "./pages/home/Home";
 import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
+
+// Projects
+import Grabbit from "./pages/work/Grabbit";
+import Savvy from "./pages/work/Savvy";
+import Scribbly from "./pages/work/Scribbly";
+import Volume from "./pages/work/Volume";
 
 // Blogs
 import Post1 from "./pages/posts/Post1";
@@ -21,6 +26,9 @@ function App() {
         <Route path="/blog/data-types" element={<Post2 />}></Route>
         {/* Projects */}
         <Route path="/work/grabbit" element={<Grabbit />}></Route>
+        <Route path="/work/savvy" element={<Savvy />}></Route>
+        <Route path="/work/volume" element={<Volume />}></Route>
+        <Route path="/work/scribbly" element={<Scribbly />}></Route>
       </Routes>
       <Footer />
     </div>
