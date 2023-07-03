@@ -61,3 +61,15 @@
     @apply lg:w-[1000px] lg:mx-auto lg:py-20 lg:gap-24;
   }
 }
+
+@layer components {
+  .selected-tab {
+    @apply py-2 px-6 rounded-full url-link bg-primary text-offWhite1 transition ease-in-out duration-500;
+  }
+}
+
+@layer components {
+  .non-selected-tab {
+    @apply py-2 px-6 rounded-full url-link bg-offWhite2 text-gray transition ease-in-out duration-500;
+  }
+}
