@@ -118,7 +118,7 @@ function Post1() {
         <h2 className="text-2xl font-bold text-center lg:text-4xl">
           More on Intro to iOS: Swift Basics
         </h2>
-        <div className="flex flex-col gap-8 lg:flex-row lg:ga-8 lg:justify-center">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-8 lg:justify-center">
           <PostCell
             date="June 12"
             title="Data Types"
