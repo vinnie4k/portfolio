@@ -3,6 +3,7 @@ import CodeBlock from "../blog/CodeBlock";
 import Credits from "../blog/Credits";
 import PostCell from "../../components/PostCell";
 import PostHeader from "./PostHeader";
+import ReturnBlog from "../blog/ReturnBlog";
 import post1_1 from "/src/assets/posts/post1/post1_1.png";
 import post1_2 from "/src/assets/posts/post1/post1_2.png";
 import post1_3 from "/src/assets/posts/post1/post1_3.png";
@@ -20,7 +21,7 @@ function Post1() {
       </div>
 
       {/* Intro */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <p className="post-body">
           In almost any program that we create, we will need to store data at
           some point. In Swift, you can store data in two ways:{" "}
@@ -42,7 +43,7 @@ function Post1() {
       </div>
 
       {/* Variables */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <h2 className="post-heading">Variables</h2>
           <p className="post-body">
@@ -84,7 +85,7 @@ function Post1() {
       </div>
 
       {/* Constants */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <h2 className="post-heading">Constants</h2>
           <p className="post-body">
@@ -123,15 +124,16 @@ function Post1() {
             date="June 12"
             title="Data Types"
             body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
-            destination="/blog/data-types"
+            destination="/blog/intro-to-ios/data-types"
           />
           <PostCell
             date="June 24"
             title="Operators"
             body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
-            destination="/blog/operators"
+            destination="/blog/intro-to-ios/operators"
           />
         </div>
+        <ReturnBlog />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import CodeBlock from "../blog/CodeBlock";
 import Credits from "../blog/Credits";
 import PostCell from "../../components/PostCell";
 import PostHeader from "./PostHeader";
+import ReturnBlog from "../blog/ReturnBlog";
 import post2_1 from "/src/assets/posts/post2/post2_1.png";
 import post2_2 from "/src/assets/posts/post2/post2_2.png";
 import post2_3 from "/src/assets/posts/post2/post2_3.png";
@@ -23,12 +24,12 @@ function Post2() {
       </div>
 
       {/* Intro */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <p className="post-body">
             In the{" "}
             <a
-              href="/blog/variables-and-constants"
+              href="/blog/intro-to-ios/variables-and-constants"
               className="font-bold text-primary url-link"
             >
               Variables and Constants
@@ -62,7 +63,7 @@ function Post2() {
       </div>
 
       {/* Type Annotations */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <h2 className="post-heading">Type Annotations</h2>
           <CodeBlock
@@ -71,7 +72,7 @@ function Post2() {
           <img
             src={post2_2}
             alt="Using type annotations"
-            className="post-code-image mb-4"
+            className="post-code-image"
           />
           <Callout
             icon="ℹ️"
@@ -94,7 +95,7 @@ function Post2() {
       </div>
 
       {/* Integer and Type Safety */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <h2 className="post-heading">Integer and Type Safety</h2>
           <CodeBlock
@@ -126,7 +127,7 @@ function Post2() {
       </div>
 
       {/* Float and Double */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <h2 className="post-heading">Float and Double</h2>
           <p className="post-body">
@@ -145,7 +146,7 @@ function Post2() {
       </div>
 
       {/* Boolean */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <h2 className="post-heading">Boolean</h2>
           <p className="post-body">
@@ -163,7 +164,7 @@ function Post2() {
       </div>
 
       {/* Type Inferencing */}
-      <div className="flex flex-col gap-8">
+      <div className="post-section">
         <div>
           <h2 className="post-heading">Type Inferencing</h2>
           <p className="post-body">
@@ -199,15 +200,16 @@ function Post2() {
             date="June 1"
             title="Variables and Constants"
             body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
-            destination="/blog/variables-and-constants"
+            destination="/blog/intro-to-ios/variables-and-constants"
           />
           <PostCell
             date="June 24"
             title="Operators"
             body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
-            destination="/blog/operators"
+            destination="/blog/intro-to-ios/operators"
           />
         </div>
+        <ReturnBlog />
       </div>
     </div>
   );

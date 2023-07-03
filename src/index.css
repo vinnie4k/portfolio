@@ -34,13 +34,19 @@
 
 @layer components {
   .post-code {
-    @apply text-code font-bold;
+    @apply text-code px-[4px] py-[1px] bg-offWhite2;
+  }
+}
+
+@layer components {
+  .post-section {
+    @apply flex flex-col gap-8;
   }
 }
 
 @layer components {
   .post-code-image {
-    @apply mt-3 lg:mt-6;
+    @apply mt-3 lg:mt-6 mb-4;
   }
 }
 
