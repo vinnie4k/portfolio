@@ -4,6 +4,7 @@ import { Transition } from "@headlessui/react";
 import { useState } from "react";
 import { Fade as Hamburger } from "hamburger-react";
 import { useMatch, useResolvedPath, useNavigate } from "react-router-dom";
+import resume from "/src/assets/resume.pdf";
 
 function NavBar() {
   const [showDropdown, setDropdown] = useState(false);
@@ -65,7 +66,7 @@ function NavBar() {
             </a>
           </li>
           <li className="font-bold lg:text-xl cell-link hover:opacity-80">
-            <a>Resume</a>
+            <a href={resume}>Resume</a>
           </li>
         </ul>
 

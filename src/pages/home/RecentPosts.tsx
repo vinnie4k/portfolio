@@ -14,19 +14,19 @@ function RecentPosts() {
           date="June 1"
           title="Variables and Constants"
           body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
-          destination="/blog/variables-and-constants"
+          destination="/blog/intro-to-ios/variables-and-constants"
         />
         <PostCell
           date="June 12"
           title="Data Types"
           body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
-          destination="/blog/data-types"
+          destination="/blog/intro-to-ios/data-types"
         />
         <PostCell
           date="June 24"
           title="Operators"
           body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
-          destination="/blog/operators"
+          destination="/blog/intro-to-ios/operators"
         />
       </div>
     </div>
