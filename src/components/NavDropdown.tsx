@@ -18,7 +18,7 @@ function NavDropdown() {
               useMatch({ path: useResolvedPath("/").pathname, end: true })
                 ? "text-primary"
                 : null
-            }`}
+            } inline-block w-screen`}
           >
             Home
           </a>
@@ -30,13 +30,15 @@ function NavDropdown() {
               useMatch({ path: useResolvedPath("/blog").pathname, end: false })
                 ? "text-primary"
                 : null
-            }`}
+            } inline-block w-screen`}
           >
             Blog{" "}
           </a>
         </li>
         <li className="font-bold text-base">
-          <a href={resume}>Resume</a>
+          <a href={resume} className="inline-block w-screen">
+            Resume
+          </a>
         </li>
       </ul>
     </div>
