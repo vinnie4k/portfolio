@@ -1,4 +1,5 @@
 import { useMatch, useResolvedPath, useNavigate } from "react-router-dom";
+import resume from "/src/assets/resume.pdf";
 
 function NavDropdown() {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ function NavDropdown() {
           </a>
         </li>
         <li className="font-bold text-base">
-          <a>Resume</a>
+          <a href={resume}>Resume</a>
         </li>
       </ul>
     </div>
