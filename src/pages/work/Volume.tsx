@@ -1,5 +1,4 @@
 import WorkHeader from "./WorkHeader";
-import WorkTech from "./WorkTech";
 
 // Other Projects
 import grabbit from "/src/assets/projects/grabbit.png";
