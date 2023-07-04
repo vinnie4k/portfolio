@@ -7,7 +7,7 @@ function CodeBlock(codeProp: CodeProp) {
       <SyntaxHighlighter
         language="swift"
         style={xcode}
-        showLineNumbers="true"
+        showLineNumbers
         customStyle={{
           padding: "16px",
           backgroundColor: "#F0F0F0",

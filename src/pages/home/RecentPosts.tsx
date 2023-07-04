@@ -1,4 +1,4 @@
-import PostCell from "/src/components/PostCell";
+import PostCell from "../../components/PostCell";
 
 function RecentPosts() {
   return (
