@@ -22,7 +22,7 @@ function Connect() {
               href="https://www.instagram.com/vin.bui/"
               className="flex flex-col items-center gap-1 url-link"
             >
-              <div className="sm:flex sm:flex-row sm:gap-6 sm:items-center">
+              <div className="flex flex-col items-center sm:flex sm:flex-row sm:gap-6 sm:items-center">
                 <FaInstagram className="text-instagram w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                 <p className="text-gray text-sm sm:text-xl lg:text-2xl">
                   @vin.bui
@@ -33,7 +33,7 @@ function Connect() {
               href="https://www.linkedin.com/in/vinhan-bui/"
               className="flex flex-col items-center gap-1 url-link"
             >
-              <div className="sm:flex sm:flex-row sm:gap-6 sm:items-center">
+              <div className="flex flex-col items-center sm:flex sm:flex-row sm:gap-6 sm:items-center">
                 <FaLinkedin className="text-linkedin w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                 <p className="text-gray text-sm sm:text-xl lg:text-2xl">
                   /vinhan-bui
@@ -45,7 +45,7 @@ function Connect() {
                 href="https://github.com/vinnie4k"
                 className="flex flex-col items-center gap-1 url-link"
               >
-                <div className="sm:flex sm:flex-row sm:gap-6 sm:items-center">
+                <div className="flex flex-col items-center sm:flex sm:flex-row sm:gap-6 sm:items-center">
                   <FaGithub className="text-github w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                   <p className="text-gray text-sm sm:text-xl lg:text-2xl">
                     @vinnie4k
