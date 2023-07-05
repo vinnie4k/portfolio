@@ -40,7 +40,7 @@ function Grabbit() {
           </p>
         </div>
         <div className="max-sm:hidden">
-          <WorkTech techs="SwiftUI, Express, Firebase" />
+          <WorkTech techs="SwiftUI, NodeJS, Express, Firebase" />
         </div>
       </div>
 

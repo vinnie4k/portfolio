@@ -79,3 +79,7 @@
     @apply py-2 px-6 rounded-full url-link bg-offWhite2 text-gray transition ease-in-out duration-500;
   }
 }
+
+.react-reveal {
+  animation-fill-mode: backwards !important;
+}
