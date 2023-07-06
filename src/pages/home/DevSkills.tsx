@@ -1,11 +1,11 @@
 import iosDev from "/src/assets/ios_dev.png";
 import webDev from "/src/assets/web_dev.png";
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 function DevSkills() {
   return (
     <div className="flex flex-col gap-16">
-      <Slide left>
+      <Fade left>
         <div className="sm:flex sm:flex-row sm:gap-12 sm:items-center lg:gap-24">
           <img
             src={webDev}
@@ -22,9 +22,9 @@ function DevSkills() {
             </p>
           </div>
         </div>
-      </Slide>
+      </Fade>
 
-      <Slide right>
+      <Fade right>
         <div className="sm:flex sm:flex-row sm:gap-12 sm:items-center lg:gap-24">
           <img
             src={iosDev}
@@ -46,7 +46,7 @@ function DevSkills() {
             className="max-lg:h-56 mx-auto mt-16 max-sm:hidden lg:w-[340px]"
           />
         </div>
-      </Slide>
+      </Fade>
     </div>
   );
 }

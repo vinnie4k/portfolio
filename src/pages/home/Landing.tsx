@@ -26,7 +26,7 @@ function Landing() {
   }, 1500);
 
   return (
-    <div className="h-[calc(100vh-160px)] sm:h-[100vh-224px)] flex items-center justify-center">
+    <div className="h-[calc(100vh-160px)] sm:h-[calc(100vh-224px)] flex items-center justify-center">
       <div className="flex flex-col max-sm:text-center sm:flex-row sm:items-center">
         <Zoom>
           <img
@@ -37,7 +37,7 @@ function Landing() {
         </Zoom>
         <div className="sm:mr-8">
           <Fade when={fadeTwo}>
-            <h1 className="font-bold text-4xl max-sm:pb-2 sm:text-5xl sm:pb-4 lg:text-7xl">
+            <h1 className="font-bold text-4xl max-sm:pb-2 sm:text-5xl sm:pb-6 lg:text-7xl">
               Hi. I'm Vin.
             </h1>
           </Fade>
