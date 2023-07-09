@@ -15,20 +15,44 @@ function TechSkills() {
     <Fade>
       <div className="sm:hidden mx-[-32px] py-16 bg-offWhite1 flex flex-col gap-16">
         <div className="flex flex-row justify-center gap-8">
-          <img src={sqlite} alt="SQLite Logo" className="w-12" />
-          <img src={java} alt="Java Logo" className="w-12" />
-          <img src={python} alt="Python Logo" className="w-12" />
+          <a href="https://www.sqlite.org/index.html">
+            <img src={sqlite} alt="SQLite Logo" className="w-12 url-link" />
+          </a>
+          <a href="https://www.java.com/en/">
+            <img src={java} alt="Java Logo" className="w-12 url-link" />
+          </a>
+          <a href="https://www.python.org/">
+            <img src={python} alt="Python Logo" className="w-12 url-link" />
+          </a>
         </div>
         <div className="flex flex-row justify-center gap-8">
-          <img src={swift} alt="Swift Logo" className="w-12" />
-          <img src={react} alt="React Logo" className="w-12" />
-          <img src={nodejs} alt="NodeJS Logo" className="w-12" />
-          <img src={express} alt="ExpressJS Logo" className="w-12" />
+          <a href="https://www.swift.org/">
+            <img src={swift} alt="Swift Logo" className="w-12 url-link" />
+          </a>
+          <a href="https://react.dev/">
+            <img src={react} alt="React Logo" className="w-12 url-link" />
+          </a>
+          <a href="https://nodejs.org/en">
+            <img src={nodejs} alt="NodeJS Logo" className="w-12 url-link" />
+          </a>
+          <a href="https://expressjs.com/">
+            <img src={express} alt="ExpressJS Logo" className="w-12 url-link" />
+          </a>
         </div>
         <div className="flex flex-row justify-center gap-8">
-          <img src={flask} alt="Flask Logo" className="w-12" />
-          <img src={firebase} alt="Firebase Logo" className="w-12" />
-          <img src={googlecloud} alt="Google Cloud Logo" className="w-12" />
+          <a href="https://flask.palletsprojects.com/en/2.3.x/">
+            <img src={flask} alt="Flask Logo" className="w-12 url-link" />
+          </a>
+          <a href="https://firebase.google.com/">
+            <img src={firebase} alt="Firebase Logo" className="w-12 url-link" />
+          </a>
+          <a href="https://cloud.google.com/">
+            <img
+              src={googlecloud}
+              alt="Google Cloud Logo"
+              className="w-12 url-link"
+            />
+          </a>
         </div>
       </div>
 
