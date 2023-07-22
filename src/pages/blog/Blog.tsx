@@ -65,22 +65,22 @@ function Blog() {
           <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
             <Zoom when={fadeFour}>
               <PostCell
-                date="June 1"
-                title="Variables and Constants"
-                body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
-                destination="/blog/intro-to-ios/variables-and-constants"
-              />
-              <PostCell
-                date="June 12"
-                title="Data Types"
-                body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
-                destination="/blog/intro-to-ios/data-types"
+                date="June 26"
+                title="Data Structures"
+                body="We learned how to use variables and constants to store data, but only explored basic values such as integer numbers and text. However, when we program, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
+                destination="/blog/intro-to-ios/data-structures"
               />
               <PostCell
                 date="June 24"
                 title="Operators"
                 body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
                 destination="/blog/intro-to-ios/operators"
+              />
+              <PostCell
+                date="June 12"
+                title="Data Types"
+                body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
+                destination="/blog/intro-to-ios/data-types"
               />
             </Zoom>
           </div>
@@ -119,10 +119,16 @@ function Blog() {
           <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
             <Zoom when={fadeFive}>
               <PostCell
-                date="June 1"
-                title="Variables and Constants"
-                body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
-                destination="/blog/intro-to-ios/variables-and-constants"
+                date="June 26"
+                title="Data Structures"
+                body="We learned how to use variables and constants to store data, but only explored basic values such as integer numbers and text. However, when we program, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
+                destination="/blog/intro-to-ios/data-structures"
+              />
+              <PostCell
+                date="June 24"
+                title="Operators"
+                body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
+                destination="/blog/intro-to-ios/operators"
               />
               <PostCell
                 date="June 12"
@@ -130,11 +136,15 @@ function Blog() {
                 body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
                 destination="/blog/intro-to-ios/data-types"
               />
+            </Zoom>
+          </div>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
+            <Zoom when={fadeFive}>
               <PostCell
-                date="June 24"
-                title="Operators"
-                body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
-                destination="/blog/intro-to-ios/operators"
+                date="June 1"
+                title="Variables and Constants"
+                body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
+                destination="/blog/intro-to-ios/variables-and-constants"
               />
             </Zoom>
           </div>
