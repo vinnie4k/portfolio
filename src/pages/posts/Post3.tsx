@@ -225,6 +225,12 @@ Logical Operators
             body="We learned how to use variables and constants to store data, but only explored basic values such as integer numbers and text. However, when we program, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
             destination="/blog/intro-to-ios/data-structures"
           />
+          <PostCell
+            date="June 28"
+            title="Conditionals"
+            body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
+            destination="/blog/intro-to-ios/conditionals"
+          />
         </div>
         <ReturnBlog />
       </div>

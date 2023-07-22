@@ -62,7 +62,7 @@ staff[2]`}
         </div>
         <div>
           <p className="post-body">
-            Swift uses <span className="font-italic">type inferencing</span> to
+            Swift uses <span className="italic">type inferencing</span> to
             determine the type of <span className="post-code">staff</span>.
             Because all of the elements inside of the array are strings, Swift
             knows that <span className="post-code">staff</span> is an array of
@@ -196,16 +196,16 @@ staff[2]`}
         </h2>
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-8 lg:justify-center">
           <PostCell
-            date="June 1"
-            title="Variables and Constants"
-            body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
-            destination="/blog/intro-to-ios/variables-and-constants"
+            date="June 24"
+            title="Operators"
+            body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
+            destination="/blog/intro-to-ios/operators"
           />
           <PostCell
-            date="June 12"
-            title="Data Types"
-            body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
-            destination="/blog/intro-to-ios/data-types"
+            date="June 28"
+            title="Conditionals"
+            body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
+            destination="/blog/intro-to-ios/conditionals"
           />
         </div>
         <ReturnBlog />
