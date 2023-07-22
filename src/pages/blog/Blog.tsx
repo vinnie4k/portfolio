@@ -65,6 +65,12 @@ function Blog() {
           <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
             <Zoom when={fadeFour}>
               <PostCell
+                date="June 30"
+                title="Loops"
+                body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
+                destination="/blog/intro-to-ios/loops"
+              />
+              <PostCell
                 date="June 28"
                 title="Conditionals"
                 body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
@@ -75,12 +81,6 @@ function Blog() {
                 title="Data Structures"
                 body="We learned how to use variables and constants to store data, but only explored basic values such as integer numbers and text. However, when we program, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
                 destination="/blog/intro-to-ios/data-structures"
-              />
-              <PostCell
-                date="June 24"
-                title="Operators"
-                body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
-                destination="/blog/intro-to-ios/operators"
               />
             </Zoom>
           </div>
@@ -119,6 +119,12 @@ function Blog() {
           <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
             <Zoom when={fadeFive}>
               <PostCell
+                date="June 30"
+                title="Loops"
+                body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
+                destination="/blog/intro-to-ios/loops"
+              />
+              <PostCell
                 date="June 28"
                 title="Conditionals"
                 body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
@@ -130,16 +136,16 @@ function Blog() {
                 body="We learned how to use variables and constants to store data, but only explored basic values such as integer numbers and text. However, when we program, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
                 destination="/blog/intro-to-ios/data-structures"
               />
+            </Zoom>
+          </div>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
+            <Zoom when={fadeFive}>
               <PostCell
                 date="June 24"
                 title="Operators"
                 body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
                 destination="/blog/intro-to-ios/operators"
               />
-            </Zoom>
-          </div>
-          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
-            <Zoom when={fadeFive}>
               <PostCell
                 date="June 12"
                 title="Data Types"

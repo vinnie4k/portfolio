@@ -207,6 +207,12 @@ staff[2]`}
             body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
             destination="/blog/intro-to-ios/conditionals"
           />
+          <PostCell
+            date="June 30"
+            title="Loops"
+            body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
+            destination="/blog/intro-to-ios/loops"
+          />
         </div>
         <ReturnBlog />
       </div>
