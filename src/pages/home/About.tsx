@@ -43,7 +43,7 @@ function About() {
             programs:{" "}
             <span className="text-black">to solve real world problems</span>.
             Fast-forward to today, I have developed several projects with strong
-            mission statements, all aimed to provide a simple and effective
+            mission statements, aimed at providing a simple and effective
             solution to real problems.
           </p>
           <p className="text-gray font text-base lg:text-xl">

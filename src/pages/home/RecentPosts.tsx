@@ -14,22 +14,22 @@ function RecentPosts() {
         <div className="flex flex-col justify-center gap-16 lg:flex-row lg:gap-8">
           <Zoom>
             <PostCell
-              date="June 1"
-              title="Variables and Constants"
-              body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
-              destination="/blog/intro-to-ios/variables-and-constants"
+              date="July 3"
+              title="Optionals"
+              body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. The problem with this is that we are creating imaginary rules for ourselves."
+              destination="/blog/intro-to-ios/optionals"
             />
             <PostCell
-              date="June 12"
-              title="Data Types"
-              body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
-              destination="/blog/intro-to-ios/data-types"
+              date="July 1"
+              title="Functions"
+              body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
+              destination="/blog/intro-to-ios/functions"
             />
             <PostCell
-              date="June 24"
-              title="Operators"
-              body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
-              destination="/blog/intro-to-ios/operators"
+              date="June 30"
+              title="Loops"
+              body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
+              destination="/blog/intro-to-ios/loops"
             />
           </Zoom>
         </div>

@@ -76,7 +76,7 @@ function Volume() {
                   organizations? Volume is here for you!
                 </p>
                 <div className="sm:hidden">
-                  <WorkTech techs="SwiftUI, Express, Firebase" />
+                  <WorkTech techs="SwiftUI, Combine, GraphQL, Apollo Client, Firebase" />
                 </div>
               </div>
               <p className="sm:text-xl lg:text-2xl">

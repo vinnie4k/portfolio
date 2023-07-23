@@ -208,6 +208,12 @@ function Post2() {
             body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
             destination="/blog/intro-to-ios/operators"
           />
+          <PostCell
+            date="June 26"
+            title="Data Structures"
+            body="We learned how to use variables and constants to store data, but only explored basic values such as integer numbers and text. However, when we program, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
+            destination="/blog/intro-to-ios/data-structures"
+          />
         </div>
         <ReturnBlog />
       </div>

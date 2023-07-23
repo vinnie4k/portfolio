@@ -15,6 +15,11 @@ import Volume from "./pages/work/Volume";
 import Post1 from "./pages/posts/Post1";
 import Post2 from "./pages/posts/Post2";
 import Post3 from "./pages/posts/Post3";
+import Post4 from "./pages/posts/Post4";
+import Post5 from "./pages/posts/Post5";
+import Post6 from "./pages/posts/Post6";
+import Post7 from "./pages/posts/Post7";
+import Post8 from "./pages/posts/Post8";
 
 function App() {
   return (
@@ -31,6 +36,17 @@ function App() {
         ></Route>
         <Route path="/blog/intro-to-ios/data-types" element={<Post2 />}></Route>
         <Route path="/blog/intro-to-ios/operators" element={<Post3 />}></Route>
+        <Route
+          path="/blog/intro-to-ios/data-structures"
+          element={<Post4 />}
+        ></Route>
+        <Route
+          path="/blog/intro-to-ios/conditionals"
+          element={<Post5 />}
+        ></Route>
+        <Route path="/blog/intro-to-ios/loops" element={<Post6 />}></Route>
+        <Route path="/blog/intro-to-ios/functions" element={<Post7 />}></Route>
+        <Route path="/blog/intro-to-ios/optionals" element={<Post8 />}></Route>
         {/* Projects */}
         <Route path="/work/grabbit" element={<Grabbit />}></Route>
         <Route path="/work/savvy" element={<Savvy />}></Route>
