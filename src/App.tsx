@@ -19,6 +19,7 @@ import Post4 from "./pages/posts/Post4";
 import Post5 from "./pages/posts/Post5";
 import Post6 from "./pages/posts/Post6";
 import Post7 from "./pages/posts/Post7";
+import Post8 from "./pages/posts/Post8";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         ></Route>
         <Route path="/blog/intro-to-ios/loops" element={<Post6 />}></Route>
         <Route path="/blog/intro-to-ios/functions" element={<Post7 />}></Route>
+        <Route path="/blog/intro-to-ios/optionals" element={<Post8 />}></Route>
         {/* Projects */}
         <Route path="/work/grabbit" element={<Grabbit />}></Route>
         <Route path="/work/savvy" element={<Savvy />}></Route>

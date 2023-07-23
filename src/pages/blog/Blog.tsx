@@ -65,6 +65,12 @@ function Blog() {
           <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
             <Zoom when={fadeFour}>
               <PostCell
+                date="July 3"
+                title="Optionals"
+                body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. The problem with this is that we are creating imaginary rules for ourselves."
+                destination="/blog/intro-to-ios/optionals"
+              />
+              <PostCell
                 date="July 1"
                 title="Functions"
                 body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
@@ -75,12 +81,6 @@ function Blog() {
                 title="Loops"
                 body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
                 destination="/blog/intro-to-ios/loops"
-              />
-              <PostCell
-                date="June 28"
-                title="Conditionals"
-                body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
-                destination="/blog/intro-to-ios/conditionals"
               />
             </Zoom>
           </div>
@@ -119,6 +119,12 @@ function Blog() {
           <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
             <Zoom when={fadeFive}>
               <PostCell
+                date="July 3"
+                title="Optionals"
+                body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. The problem with this is that we are creating imaginary rules for ourselves."
+                destination="/blog/intro-to-ios/optionals"
+              />
+              <PostCell
                 date="July 1"
                 title="Functions"
                 body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
@@ -130,16 +136,16 @@ function Blog() {
                 body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
                 destination="/blog/intro-to-ios/loops"
               />
+            </Zoom>
+          </div>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
+            <Zoom when={fadeFive}>
               <PostCell
                 date="June 28"
                 title="Conditionals"
                 body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
                 destination="/blog/intro-to-ios/conditionals"
               />
-            </Zoom>
-          </div>
-          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
-            <Zoom when={fadeFive}>
               <PostCell
                 date="June 26"
                 title="Data Structures"
@@ -152,16 +158,16 @@ function Blog() {
                 body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
                 destination="/blog/intro-to-ios/operators"
               />
+            </Zoom>
+          </div>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
+            <Zoom when={fadeFive}>
               <PostCell
                 date="June 12"
                 title="Data Types"
                 body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
                 destination="/blog/intro-to-ios/data-types"
               />
-            </Zoom>
-          </div>
-          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
-            <Zoom when={fadeFive}>
               <PostCell
                 date="June 1"
                 title="Variables and Constants"

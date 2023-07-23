@@ -70,7 +70,7 @@ function Post7() {
           </p>
           <CodeBlock
             codeString={`func myName(name: String) {
-  print("My name is \(name)")
+  print("My name is \\(name)")
 }`}
           />
           <p className="post-body mt-4">
@@ -105,7 +105,7 @@ function Post7() {
           </p>
           <CodeBlock
             codeString={`func myName(name str: String) {
-    print("My name is \(str)")
+    print("My name is \\(str)")
 }
 
 myName(name: "Vin")`}
@@ -131,7 +131,7 @@ myName(name: "Vin")`}
           </p>
           <CodeBlock
             codeString={`func myName(_ name: String) {
-    print("My name is \(name)")
+    print("My name is \\(name)")
 }
 
 myName("Vin")`}
@@ -222,6 +222,12 @@ myName("Vin")`}
             title="Loops"
             body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
             destination="/blog/intro-to-ios/loops"
+          />
+          <PostCell
+            date="July 3"
+            title="Optionals"
+            body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. The problem with this is that we are creating imaginary rules for ourselves."
+            destination="/blog/intro-to-ios/optionals"
           />
         </div>
         <ReturnBlog />

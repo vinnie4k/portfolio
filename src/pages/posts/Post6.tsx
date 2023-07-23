@@ -234,6 +234,12 @@ while i < 10 {
             body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
             destination="/blog/intro-to-ios/functions"
           />
+          <PostCell
+            date="July 3"
+            title="Optionals"
+            body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. The problem with this is that we are creating imaginary rules for ourselves."
+            destination="/blog/intro-to-ios/optionals"
+          />
         </div>
         <ReturnBlog />
       </div>
