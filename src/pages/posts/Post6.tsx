@@ -228,6 +228,12 @@ while i < 10 {
             body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
             destination="/blog/intro-to-ios/conditionals"
           />
+          <PostCell
+            date="July 1"
+            title="Functions"
+            body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
+            destination="/blog/intro-to-ios/functions"
+          />
         </div>
         <ReturnBlog />
       </div>

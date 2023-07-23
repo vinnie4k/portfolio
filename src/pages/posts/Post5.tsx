@@ -190,6 +190,12 @@ if a < 0 {
             body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
             destination="/blog/intro-to-ios/loops"
           />
+          <PostCell
+            date="July 1"
+            title="Functions"
+            body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
+            destination="/blog/intro-to-ios/functions"
+          />
         </div>
         <ReturnBlog />
       </div>
