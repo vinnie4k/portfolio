@@ -3,7 +3,6 @@ import WorkTech from "./WorkTech";
 import grabbit_1 from "/src/assets/projects/grabbit/grabbit_1.png";
 import grabbit_2 from "/src/assets/projects/grabbit/grabbit_2.png";
 import grabbit_3 from "/src/assets/projects/grabbit/grabbit_3.png";
-import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
 
@@ -22,7 +21,7 @@ function Grabbit() {
 
   return (
     <div className="flex flex-col gap-8 lg:w-[1000px] lg:mx-auto sm:py-16 lg:py-24 sm:gap-16">
-      <Zoom>
+      <Fade>
         {/* Header */}
         <WorkHeader
           type="iOS Application"
@@ -54,7 +53,7 @@ function Grabbit() {
             <WorkTech techs="SwiftUI, NodeJS, Express, Firebase" />
           </div>
         </div>
-      </Zoom>
+      </Fade>
 
       {/* Screenshots */}
       <div className="flex flex-col gap-16 py-8 items-center text-center">
@@ -102,8 +101,8 @@ function Grabbit() {
       </div>
 
       {/* See More */}
-      <div className="flex flex-col gap-8 items-center lg:gap-16 py-24">
-        <Zoom when={fadeTwo}>
+      <Fade when={fadeTwo}>
+        <div className="flex flex-col gap-8 items-center lg:gap-16 py-24">
           <h2 className="text-3xl font-bold text-center lg:text-4xl">
             More Projects
           </h2>
@@ -122,8 +121,8 @@ function Grabbit() {
               />
             </a>
           </div>
-        </Zoom>
-      </div>
+        </div>
+      </Fade>
     </div>
   );
 }

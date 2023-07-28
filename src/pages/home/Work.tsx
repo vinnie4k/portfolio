@@ -2,12 +2,12 @@ import grabbit from "/src/assets/projects/grabbit.png";
 import savvy from "/src/assets/projects/savvy.png";
 import scribbly from "/src/assets/projects/scribbly.png";
 import volume from "/src/assets/projects/volume.png";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 function Work() {
   return (
-    <div className="text-center">
-      <Zoom>
+    <Fade>
+      <div className="text-center">
         <h2 className="text-3xl font-bold pb-2 sm:text-4xl lg:text-5xl">
           Work
         </h2>
@@ -17,36 +17,28 @@ function Work() {
         </p>
         <div className="flex flex-col max-sm:gap-16 max-sm:items-center sm:flex-row sm:gap-8 sm:justify-center">
           <div className="flex flex-col max-sm:gap-16 sm:gap-8">
-            <Zoom>
-              <a href="/work/grabbit" className="w-72 lg:w-96">
-                <img
-                  src={grabbit}
-                  alt="Image of Grabbit"
-                  className="cell-link"
-                />
-              </a>
-              <a href="/work/volume" className="w-72 lg:w-96">
-                <img src={volume} alt="Image of Volume" className="cell-link" />
-              </a>
-            </Zoom>
+            <a href="/work/grabbit" className="w-72 lg:w-96">
+              <img src={grabbit} alt="Image of Grabbit" className="cell-link" />
+            </a>
+            <a href="/work/volume" className="w-72 lg:w-96">
+              <img src={volume} alt="Image of Volume" className="cell-link" />
+            </a>
           </div>
           <div className="flex flex-col max-sm:gap-16 sm:gap-8">
-            <Zoom>
-              <a href="/work/savvy" className="w-72 lg:w-96">
-                <img src={savvy} alt="Image of Savvy" className="cell-link" />
-              </a>
-              <a href="/work/scribbly" className="w-72 lg:w-96">
-                <img
-                  src={scribbly}
-                  alt="Image of Scribbly"
-                  className="cell-link"
-                />
-              </a>
-            </Zoom>
+            <a href="/work/savvy" className="w-72 lg:w-96">
+              <img src={savvy} alt="Image of Savvy" className="cell-link" />
+            </a>
+            <a href="/work/scribbly" className="w-72 lg:w-96">
+              <img
+                src={scribbly}
+                alt="Image of Scribbly"
+                className="cell-link"
+              />
+            </a>
           </div>
         </div>
-      </Zoom>
-    </div>
+      </div>
+    </Fade>
   );
 }
 

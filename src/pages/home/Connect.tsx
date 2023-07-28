@@ -2,12 +2,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { InlineWidget } from "react-calendly";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 function Connect() {
   return (
-    <div className="bg-offWhite1 mx-[-32px] py-16 px-8 sm:mx-[-64px] sm:px-16 sm:flex sm:flex-row sm:gap-16 sm:py-[120px] lg:mx-[calc(calc(-100vw+1000px)/2)] lg:px-[calc(calc(100vw-1000px)/2)]">
-      <Zoom>
+    <Fade>
+      <div className="bg-offWhite1 mx-[-32px] py-16 px-8 sm:mx-[-64px] sm:px-16 sm:flex sm:flex-row sm:gap-16 sm:py-[120px] lg:mx-[calc(calc(-100vw+1000px)/2)] lg:px-[calc(calc(100vw-1000px)/2)]">
         <div className="flex flex-col gap-6 mb-6 sm:gap-9">
           <div>
             <h2 className="text-3xl font-bold mb-1 sm:mb-2 sm:text-4xl lg:text-5xl">
@@ -67,8 +67,8 @@ function Connect() {
             }}
           />
         </div>
-      </Zoom>
-    </div>
+      </div>
+    </Fade>
   );
 }
 

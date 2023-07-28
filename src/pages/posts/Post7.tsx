@@ -226,7 +226,7 @@ myName("Vin")`}
           <PostCell
             date="July 3"
             title="Optionals"
-            body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. The problem with this is that we are creating imaginary rules for ourselves."
+            body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. Can we do better?"
             destination="/blog/intro-to-ios/optionals"
           />
         </div>
