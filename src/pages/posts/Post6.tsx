@@ -225,7 +225,7 @@ while i < 10 {
           <PostCell
             date="June 28"
             title="Conditionals"
-            body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals."
+            body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals and are very common in many programming languages."
             destination="/blog/intro-to-ios/conditionals"
           />
           <PostCell
@@ -237,7 +237,7 @@ while i < 10 {
           <PostCell
             date="July 3"
             title="Optionals"
-            body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. The problem with this is that we are creating imaginary rules for ourselves."
+            body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. Can we do better?"
             destination="/blog/intro-to-ios/optionals"
           />
         </div>

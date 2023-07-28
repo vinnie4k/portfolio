@@ -4,6 +4,7 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import volumeAnimation from "../../assets/lottie/volume.json";
 import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 // Other Projects
 import grabbit from "/src/assets/projects/grabbit.png";
@@ -147,8 +148,8 @@ function Volume() {
         </div>
 
         {/* See More */}
-        <div className="flex flex-col gap-8 items-center lg:gap-16 py-24">
-          <Zoom when={fadeTwo}>
+        <Fade when={fadeTwo}>
+          <div className="flex flex-col gap-8 items-center lg:gap-16 py-24">
             <h2 className="text-3xl font-bold text-center lg:text-4xl">
               More Projects
             </h2>
@@ -171,8 +172,8 @@ function Volume() {
                 />
               </a>
             </div>
-          </Zoom>
-        </div>
+          </div>
+        </Fade>
       </div>
 
       {isStopped ? null : <div className="h-screen w-screen"></div>}

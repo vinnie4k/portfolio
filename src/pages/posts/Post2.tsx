@@ -199,7 +199,7 @@ function Post2() {
           <PostCell
             date="June 1"
             title="Variables and Constants"
-            body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants."
+            body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants. What is the difference between these two? When do we use which?"
             destination="/blog/intro-to-ios/variables-and-constants"
           />
           <PostCell
@@ -211,7 +211,7 @@ function Post2() {
           <PostCell
             date="June 26"
             title="Data Structures"
-            body="We learned how to use variables and constants to store data, but only explored basic values such as integer numbers and text. However, when we program, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
+            body="We learned how to use variables and constants to store data but only explored basic values. However, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
             destination="/blog/intro-to-ios/data-structures"
           />
         </div>
