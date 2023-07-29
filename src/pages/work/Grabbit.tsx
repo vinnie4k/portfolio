@@ -57,7 +57,7 @@ function Grabbit() {
 
       {/* Screenshots */}
       <div className="flex flex-col gap-16 py-8 items-center text-center">
-        <Fade left when={fadeTwo}>
+        <Fade bottom when={fadeTwo}>
           <div className="flex flex-col gap-4 items-center sm:flex-row-reverse sm:gap-16">
             <img
               src={grabbit_1}
@@ -69,7 +69,7 @@ function Grabbit() {
             </p>
           </div>
         </Fade>
-        <Fade right when={fadeTwo}>
+        <Fade bottom when={fadeTwo}>
           <div className="flex flex-col gap-4 items-center sm:flex-row sm:gap-16">
             <img
               src={grabbit_2}
@@ -81,7 +81,7 @@ function Grabbit() {
             </p>
           </div>
         </Fade>
-        <Fade left when={fadeTwo}>
+        <Fade bottom when={fadeTwo}>
           <div className="flex flex-col gap-4 items-center mb-8 sm:flex-row-reverse sm:gap-16">
             <img
               src={grabbit_3}
