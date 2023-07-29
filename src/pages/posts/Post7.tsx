@@ -42,14 +42,14 @@ function Post7() {
   print("My name is Vin")
 }`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             If we were to just define this function in the playground, nothing
             will be printed out. This is because we also need to{" "}
             <span className="italic">call</span> the function. We can call the
             function we previously defined with the following code:
           </p>
           <CodeBlock codeString={`myName()`} />
-          <p className="post-body mt-4">Let’s test this in the playground:</p>
+          <p className="post-body">Let’s test this in the playground:</p>
           <img
             src={post7_1}
             alt="Defining and calling a function"
@@ -73,7 +73,7 @@ function Post7() {
   print("My name is \\(name)")
 }`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             This function has a parameter called{" "}
             <span className="post-code">name</span> which is of type{" "}
             <span className="post-code">String</span> and uses string
@@ -110,8 +110,6 @@ function Post7() {
 
 myName(name: "Vin")`}
           />
-        </div>
-        <div>
           <p className="post-body">
             In this example, the name of the parameter within the function
             definition is <span className="post-code">str</span> but when I call
@@ -123,8 +121,6 @@ myName(name: "Vin")`}
             seem useful at first glance, but it is a very powerful feature once
             you begin writing code.
           </p>
-        </div>
-        <div>
           <p className="post-body">
             You can also use an underscore (<span className="post-code">_</span>
             ) as the <span className="italic">external parameter</span>.
@@ -136,8 +132,6 @@ myName(name: "Vin")`}
 
 myName("Vin")`}
           />
-        </div>
-        <div>
           <p className="post-body">
             By doing this, you do not need to provide the external parameter
             name when passing in your argument in the function call.
@@ -174,8 +168,6 @@ myName("Vin")`}
     return false
 }`}
           />
-        </div>
-        <div>
           <p className="post-body">
             The function above will return{" "}
             <span className="post-code">true</span> if the argument that I pass

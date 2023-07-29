@@ -120,7 +120,7 @@ for person in staff {
 	print(person)
 }`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             In this code, the loop variable is{" "}
             <span className="post-code">person</span>. For every iteration of
             this loop, the value of <span className="post-code">person</span>{" "}
@@ -174,7 +174,7 @@ while i < 10 {
 	i += 1
 }`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             The above code will print out the value of{" "}
             <span className="post-code">i</span> and increment the value of{" "}
             <span className="post-code">i</span> by 1{" "}
@@ -202,7 +202,7 @@ while i < 10 {
 	// i += 1 commented out
 }`}
           />
-          <div className="mt-4 flex flex-row gap-4 items-center py-4 px-6 bg-offWhite2 rounded-md lg:py-6 lg:px-8">
+          <div className="flex flex-row gap-4 items-center py-4 px-6 bg-offWhite2 rounded-md lg:py-6 lg:px-8">
             <p className="lg:text-xl">{"ℹ️"}</p>
             <p className="font-bold lg:text-xl">
               You can use <span className="post-code">break</span> or{" "}

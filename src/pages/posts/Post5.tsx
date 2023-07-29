@@ -157,7 +157,7 @@ if a < 0 {
     // control statement: return, break, continue, or throw
 }`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             <span className="post-code">condition</span> is an expression that
             evaluates to <span className="post-code">true</span> or{" "}
             <span className="post-code">false</span>. If{" "}
