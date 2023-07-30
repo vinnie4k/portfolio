@@ -39,7 +39,7 @@ function Grabbit() {
                 Grabbit is here to help!
               </p>
               <div className="sm:hidden">
-                <WorkTech techs="SwiftUI, Express, Firebase" />
+                <WorkTech techs="SwiftUI, NodeJS, Express, Firebase" />
               </div>
             </div>
             <p className="sm:text-xl lg:text-2xl">
