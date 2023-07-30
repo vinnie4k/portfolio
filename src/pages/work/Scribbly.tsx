@@ -32,17 +32,18 @@ function Scribbly() {
     <>
       {/* Lottie */}
       <div
-        className={`h-[calc(100vh-160px)] sm:h-[calc(100vh-224px)] flex items-center justify-center`}
+        className={`h-[calc(100vh-200px)] sm:h-[calc(100vh-224px)] flex items-center justify-center`}
       >
         <Lottie
           options={lottieSettings}
-          height={600}
+          height={window.innerWidth > 640 ? 600 : 300}
           eventListeners={[
             { eventName: "complete", callback: () => toggleIsStopped() },
           ]}
           isClickToPauseDisabled={true}
         />
       </div>
+
       <div className="flex flex-col gap-8 lg:w-[1000px] lg:mx-auto sm:py-16 lg:py-24 sm:gap-16">
         <Fade bottom when={isStopped} distance="75px">
           {/* Header */}
