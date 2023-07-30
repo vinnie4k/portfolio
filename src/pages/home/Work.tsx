@@ -15,8 +15,8 @@ function Work() {
           My notable projects. Click to learn more about their design and
           development.
         </p>
-        <div className="flex flex-col max-sm:gap-16 max-sm:items-center sm:flex-row sm:gap-8 sm:justify-center">
-          <div className="flex flex-col max-sm:gap-16 sm:gap-8">
+        <div className="flex flex-col max-sm:gap-8 max-sm:items-center sm:flex-row sm:gap-8 sm:justify-center">
+          <div className="flex flex-col max-sm:gap-8 sm:gap-8">
             <a href="/work/grabbit" className="w-72 lg:w-96">
               <img src={grabbit} alt="Image of Grabbit" className="cell-link" />
             </a>
@@ -24,7 +24,7 @@ function Work() {
               <img src={volume} alt="Image of Volume" className="cell-link" />
             </a>
           </div>
-          <div className="flex flex-col max-sm:gap-16 sm:gap-8">
+          <div className="flex flex-col max-sm:gap-8 sm:gap-8">
             <a href="/work/savvy" className="w-72 lg:w-96">
               <img src={savvy} alt="Image of Savvy" className="cell-link" />
             </a>
