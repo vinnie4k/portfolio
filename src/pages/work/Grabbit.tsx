@@ -21,7 +21,7 @@ function Grabbit() {
 
   return (
     <div className="flex flex-col gap-8 lg:w-[1000px] lg:mx-auto sm:py-16 lg:py-24 sm:gap-16">
-      <Fade>
+      <Fade bottom distance="75px">
         {/* Header */}
         <WorkHeader
           type="iOS Application"
@@ -39,7 +39,7 @@ function Grabbit() {
                 Grabbit is here to help!
               </p>
               <div className="sm:hidden">
-                <WorkTech techs="SwiftUI, Express, Firebase" />
+                <WorkTech techs="SwiftUI, NodeJS, Express, Firebase" />
               </div>
             </div>
             <p className="sm:text-xl lg:text-2xl">
@@ -57,7 +57,7 @@ function Grabbit() {
 
       {/* Screenshots */}
       <div className="flex flex-col gap-16 py-8 items-center text-center">
-        <Fade left when={fadeTwo}>
+        <Fade bottom when={fadeTwo} distance="75px">
           <div className="flex flex-col gap-4 items-center sm:flex-row-reverse sm:gap-16">
             <img
               src={grabbit_1}
@@ -69,7 +69,7 @@ function Grabbit() {
             </p>
           </div>
         </Fade>
-        <Fade right when={fadeTwo}>
+        <Fade bottom when={fadeTwo} distance="75px">
           <div className="flex flex-col gap-4 items-center sm:flex-row sm:gap-16">
             <img
               src={grabbit_2}
@@ -81,7 +81,7 @@ function Grabbit() {
             </p>
           </div>
         </Fade>
-        <Fade left when={fadeTwo}>
+        <Fade bottom when={fadeTwo} distance="75px">
           <div className="flex flex-col gap-4 items-center mb-8 sm:flex-row-reverse sm:gap-16">
             <img
               src={grabbit_3}
@@ -101,7 +101,7 @@ function Grabbit() {
       </div>
 
       {/* See More */}
-      <Fade when={fadeTwo}>
+      <Fade bottom distance="75px" when={fadeTwo}>
         <div className="flex flex-col gap-8 items-center lg:gap-16 py-24">
           <h2 className="text-3xl font-bold text-center lg:text-4xl">
             More Projects

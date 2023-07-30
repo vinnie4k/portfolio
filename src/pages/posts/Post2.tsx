@@ -171,7 +171,7 @@ function Post2() {
             Earlier when we assigned an initial value to a variable,
           </p>
           <CodeBlock codeString={`var instructor = "Vin"`} />
-          <p className="post-body mt-4">
+          <p className="post-body">
             Swift automatically <span className="italic">infers</span> what data
             type the variable will hold. This is known as{" "}
             <span className="font-bold">type inferencing</span>. You could also

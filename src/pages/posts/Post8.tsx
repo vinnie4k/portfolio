@@ -22,19 +22,21 @@ function Post8() {
         />
       </div>
 
-      <Callout
-        icon="ℹ️"
-        text="This is one of the most important concepts you will learn!"
-      />
-
       {/* Intro */}
-      <p className="post-body">
-        Sometimes we may want to show that our data does not have any value. If
-        we were using Strings, then an empty string may be a good indicator for
-        “no value”. What about integers? We could use 0 or -1. The problem with
-        this is that we are creating imaginary rules for ourselves. Swift solves
-        this issue by introducing <span className="font-bold">optionals</span>.
-      </p>
+      <div className="post-section">
+        <p className="post-body">
+          Sometimes we may want to show that our data does not have any value.
+          If we were using Strings, then an empty string may be a good indicator
+          for “no value”. What about integers? We could use 0 or -1. The problem
+          with this is that we are creating imaginary rules for ourselves. Swift
+          solves this issue by introducing{" "}
+          <span className="font-bold">optionals</span>.
+        </p>
+        <Callout
+          icon="ℹ️"
+          text="This is one of the most important concepts you will learn!"
+        />
+      </div>
 
       {/* Indicating an optional */}
       <div className="post-section">
@@ -67,8 +69,6 @@ function Post8() {
     return nil
 }`}
           />
-        </div>
-        <div>
           <p className="post-body">
             This function returns a String optional with value{" "}
             <span className="post-code">“iOS is the best subteam”</span> if the
@@ -95,8 +95,6 @@ function Post8() {
             alt="String? and String are different types"
             className="post-code-image"
           />
-        </div>
-        <div>
           <p className="post-body">
             Okay, but what if there was a function that only takes in a{" "}
             <span className="post-code">String</span>
@@ -121,7 +119,7 @@ func cheerLead(name: String) {
 
 cheerLead(name: getSubteamLead(subteam: "ios"))`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             This code will not execute because{" "}
             <span className="post-code">getSubteamLead</span> returns a{" "}
             <span className="post-code">String?</span> but the function{" "}
@@ -221,8 +219,6 @@ guard let leadName = getSubteamLead(subteam: "ios") else {
 
 cheerLead(name: leadName)`}
           />
-        </div>
-        <div>
           <p className="post-body">
             The main difference between using an{" "}
             <span className="post-code">if let</span> versus a{" "}
@@ -266,7 +262,7 @@ cheerLead(name: leadName)`}
               <span className="post-code">nil</span>, your program will crash!
             </p>
           </div>
-          <p className="post-body">
+          <p className="post-body mt-4">
             Let me emphasize this again. Your code will crash if you unwrap an
             optional that is holding <span className="post-code">nil</span>. You
             should only use this approach if you are 100% certain that the
@@ -291,8 +287,6 @@ func cheerLead(name: String) {
 let leadName = getSubteamLead(subteam: "ios")
 cheerLead(name: leadName!)`}
           />
-        </div>
-        <div>
           <p className="post-body">
             In this case, I know that my code will not crash because I am
             certain that <span className="post-code">leadName</span> will not
@@ -363,8 +357,6 @@ cheerLead(name: leadName!)`}
 
 let uppercaseDesign = getSubteamLead(subteam: "design").uppercased()`}
           />
-        </div>
-        <div>
           <p className="post-body">
             If we put this code in the playground, Xcode will give us an error.
           </p>
@@ -389,7 +381,7 @@ let uppercaseDesign = getSubteamLead(subteam: "design").uppercased()`}
           <CodeBlock
             codeString={`let uppercaseDesign = getSubteamLead(subteam: "design")?.uppercased()`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             That extra <span className="post-code">?</span> after the call to{" "}
             <span className="post-code">getSubteamLead</span> is the{" "}
             <span className="italic">optional chaining</span>. This means
@@ -413,7 +405,7 @@ let uppercaseDesign = getSubteamLead(subteam: "design").uppercased()`}
           <CodeBlock
             codeString={`let designLead = getSubteamLead(subteam: "design") ?? "Invalid"`}
           />
-          <p className="post-body mt-4">
+          <p className="post-body">
             The <span className="post-code">??</span> is the{" "}
             <span className="font-bold">nil coalescing operator</span> and it
             provides a default value if the optional is holding{" "}

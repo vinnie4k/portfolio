@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 function DevSkills() {
   return (
     <div className="flex flex-col gap-16">
-      <Fade left>
+      <Fade bottom distance="75px">
         <div className="sm:flex sm:flex-row sm:gap-12 sm:items-center lg:gap-24">
           <img
             src={webDev}
@@ -24,7 +24,7 @@ function DevSkills() {
         </div>
       </Fade>
 
-      <Fade right>
+      <Fade bottom distance="75px">
         <div className="sm:flex sm:flex-row sm:gap-12 sm:items-center lg:gap-24">
           <img
             src={iosDev}

@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 function About() {
   return (
-    <Fade>
+    <Fade bottom distance="75px">
       <div className="bg-offWhite1 mx-[-32px] py-16 px-8 flex flex-col gap-6 sm:mx-[-64px] sm:px-16 sm:py-[120px] lg:mx-[calc(calc(-100vw+1000px)/2)] lg:px-[calc(calc(100vw-1000px)/2)] lg:flex-row lg:gap-16 lg:items-center">
         <img
           src={about}

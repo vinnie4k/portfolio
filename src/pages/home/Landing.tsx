@@ -1,7 +1,6 @@
 import profile from "/src/assets/profile.png";
 import { useState } from "react";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 
 function Landing() {
   const [fadeTwo, setFadeTwo] = useState(false);
@@ -28,13 +27,13 @@ function Landing() {
   return (
     <div className="h-[calc(100vh-160px)] sm:h-[calc(100vh-224px)] flex items-center justify-center">
       <div className="flex flex-col max-sm:text-center sm:flex-row sm:items-center">
-        <Zoom>
+        <Fade bottom distance="75px">
           <img
             src={profile}
             alt="Image of Vin Bui"
             className="w-52 mx-auto pb-8 sm:hidden"
           />
-        </Zoom>
+        </Fade>
         <div className="sm:mr-8">
           <Fade when={fadeTwo}>
             <h1 className="font-bold text-4xl max-sm:pb-2 sm:text-5xl sm:pb-6 lg:text-7xl">
@@ -55,13 +54,13 @@ function Landing() {
             </p>
           </Fade>
         </div>
-        <Zoom when={fadeFour}>
+        <Fade bottom when={fadeFour} distance="75px">
           <img
             src={profile}
             alt="Image of Vin Bui"
             className="w-52 mx-auto pb-8 sm:w-56 sm:h-56 max-sm:hidden lg:w-72 lg:h-72"
           />
-        </Zoom>
+        </Fade>
       </div>
     </div>
   );

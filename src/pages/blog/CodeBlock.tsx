@@ -3,7 +3,7 @@ import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 function CodeBlock(codeProp: CodeProp) {
   return (
-    <div className="lg:mt-6">
+    <div className="lg:mt-6 lg:mb-6">
       <SyntaxHighlighter
         language="swift"
         style={xcode}
