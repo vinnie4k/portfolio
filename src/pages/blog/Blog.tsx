@@ -23,20 +23,6 @@ function Blog() {
     }
   }, 1000);
 
-  const [fadeFour, setFadeFour] = useState(false);
-  setTimeout(() => {
-    if (!fadeFour) {
-      setFadeFour(!fadeFour);
-    }
-  }, 1500);
-
-  const [fadeFive, setFadeFive] = useState(false);
-  setTimeout(() => {
-    if (!fadeFive) {
-      setFadeFive(!fadeFive);
-    }
-  }, 2000);
-
   return (
     <div className="flex flex-col gap-16 py-8 lg:w-[1000px] lg:mx-auto lg:py-24 lg:gap-24">
       <div className="flex flex-col gap-2">
@@ -54,41 +40,39 @@ function Blog() {
 
       {/* Recent Posts */}
       <div className="flex flex-col gap-8">
-        <Fade when={fadeThree}>
+        <Fade bottom when={fadeThree} distance="75px">
           <div className="flex flex-col gap-2 lg:gap-3">
             <h2 className="text-3xl font-bold sm:text-4xl lg:text-[40px]">
               Recent Posts
             </h2>
             <div className="underline-mobile lg:underline-desktop"></div>
           </div>
-          <Fade when={fadeFour}>
-            <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
-              <PostCell
-                date="July 3"
-                title="Optionals"
-                body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. Can we do better?"
-                destination="/blog/intro-to-ios/optionals"
-              />
-              <PostCell
-                date="July 1"
-                title="Functions"
-                body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
-                destination="/blog/intro-to-ios/functions"
-              />
-              <PostCell
-                date="June 30"
-                title="Loops"
-                body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
-                destination="/blog/intro-to-ios/loops"
-              />
-            </div>
-          </Fade>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4">
+            <PostCell
+              date="July 3"
+              title="Optionals"
+              body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. Can we do better?"
+              destination="/blog/intro-to-ios/optionals"
+            />
+            <PostCell
+              date="July 1"
+              title="Functions"
+              body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
+              destination="/blog/intro-to-ios/functions"
+            />
+            <PostCell
+              date="June 30"
+              title="Loops"
+              body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
+              destination="/blog/intro-to-ios/loops"
+            />
+          </div>
         </Fade>
       </div>
 
       {/* Other */}
       <div className="flex flex-col gap-8">
-        <Fade when={fadeFour}>
+        <Fade bottom when={fadeThree} distance="75px">
           <div className="flex flex-col gap-2 lg:gap-3">
             <h2 className="text-3xl font-bold sm:text-4xl lg:text-[40px]">
               Other
@@ -115,62 +99,60 @@ function Blog() {
               Intro to iOS
             </button>
           </div>
-          <Fade when={fadeFive}>
-            <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:items-center lg:justify-between mt-4">
-              <PostCell
-                date="July 3"
-                title="Optionals"
-                body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. Can we do better?"
-                destination="/blog/intro-to-ios/optionals"
-              />
-              <PostCell
-                date="July 1"
-                title="Functions"
-                body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
-                destination="/blog/intro-to-ios/functions"
-              />
-              <PostCell
-                date="June 30"
-                title="Loops"
-                body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
-                destination="/blog/intro-to-ios/loops"
-              />
-            </div>
-            <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4 lg:items-center lg:mt-12">
-              <PostCell
-                date="June 28"
-                title="Conditionals"
-                body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals and are very common in many programming languages."
-                destination="/blog/intro-to-ios/conditionals"
-              />
-              <PostCell
-                date="June 26"
-                title="Data Structures"
-                body="We learned how to use variables and constants to store data but only explored basic values. However, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
-                destination="/blog/intro-to-ios/data-structures"
-              />
-              <PostCell
-                date="June 24"
-                title="Operators"
-                body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
-                destination="/blog/intro-to-ios/operators"
-              />
-            </div>
-            <div className="flex flex-col gap-8 lg:flex lg:flex-row mt-4 lg:justify-evenly lg:items-center lg:mt-12">
-              <PostCell
-                date="June 12"
-                title="Data Types"
-                body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
-                destination="/blog/intro-to-ios/data-types"
-              />
-              <PostCell
-                date="June 1"
-                title="Variables and Constants"
-                body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants. What is the difference between these two? When do we use which?"
-                destination="/blog/intro-to-ios/variables-and-constants"
-              />
-            </div>
-          </Fade>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:items-center lg:justify-between mt-4">
+            <PostCell
+              date="July 3"
+              title="Optionals"
+              body="Sometimes we may want to show that our data does not have any value. If we were using Strings, then an empty string may be a good indicator for “no value”. Can we do better?"
+              destination="/blog/intro-to-ios/optionals"
+            />
+            <PostCell
+              date="July 1"
+              title="Functions"
+              body="Imagine a large scale application with thousands of lines of code. The codebase would be very messy! To solve this, we need to be able to reuse our code. We can do this with functions."
+              destination="/blog/intro-to-ios/functions"
+            />
+            <PostCell
+              date="June 30"
+              title="Loops"
+              body="When you want to repeat a code a certain number of times in Swift, you can either copy and paste the code or even better, you can use loops. There are two main loops in Swift: a for loop and a while loop."
+              destination="/blog/intro-to-ios/loops"
+            />
+          </div>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between mt-4 lg:items-center lg:mt-12">
+            <PostCell
+              date="June 28"
+              title="Conditionals"
+              body="If you want to execute a chunk of code only when a condition is met, then in Swift, you can use if, else if, and else statements. These are known as conditionals and are very common in many programming languages."
+              destination="/blog/intro-to-ios/conditionals"
+            />
+            <PostCell
+              date="June 26"
+              title="Data Structures"
+              body="We learned how to use variables and constants to store data but only explored basic values. However, we often need to hold more complicated data that requires a specialized format for organizing and retrieving the data."
+              destination="/blog/intro-to-ios/data-structures"
+            />
+            <PostCell
+              date="June 24"
+              title="Operators"
+              body="You have probably seen the four basic math operations in elementary school: addition, subtraction, multiplication, and division. In Swift, you can use operators to perform these operations."
+              destination="/blog/intro-to-ios/operators"
+            />
+          </div>
+          <div className="flex flex-col gap-8 lg:flex lg:flex-row mt-4 lg:justify-evenly lg:items-center lg:mt-12">
+            <PostCell
+              date="June 12"
+              title="Data Types"
+              body="In the variables and constants section, we assigned a text to a variable. In Swift, this is called a String and is one of the most important types you will use. However, there are many more types of data that Swift handles."
+              destination="/blog/intro-to-ios/data-types"
+            />
+            <PostCell
+              date="June 1"
+              title="Variables and Constants"
+              body="In almost any program that we create, we will need to store data at some point. In Swift, you can store data in two ways: variables and constants. What is the difference between these two? When do we use which?"
+              destination="/blog/intro-to-ios/variables-and-constants"
+            />
+          </div>
         </Fade>
       </div>
     </div>

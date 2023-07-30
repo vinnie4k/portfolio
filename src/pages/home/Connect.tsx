@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 function Connect() {
   return (
-    <Fade>
+    <Fade bottom distance="75px">
       <div className="bg-offWhite1 mx-[-32px] py-16 px-8 sm:mx-[-64px] sm:px-16 sm:flex sm:flex-row sm:gap-16 sm:py-[120px] lg:mx-[calc(calc(-100vw+1000px)/2)] lg:px-[calc(calc(100vw-1000px)/2)]">
         <div className="flex flex-col gap-6 mb-6 sm:gap-9">
           <div>

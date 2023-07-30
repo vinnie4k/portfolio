@@ -3,7 +3,6 @@ import WorkTech from "./WorkTech";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import volumeAnimation from "../../assets/lottie/volume.json";
-import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 
 // Other Projects
@@ -59,7 +58,7 @@ function Volume() {
       </div>
       <div className="flex flex-col gap-8 lg:w-[1000px] lg:mx-auto sm:py-16 lg:py-24 sm:gap-16">
         {/* Header */}
-        <Zoom when={isStopped}>
+        <Fade bottom when={isStopped} distance="75px">
           <WorkHeader
             type="iOS Application"
             title="Volume"
@@ -91,11 +90,11 @@ function Volume() {
               <WorkTech techs="SwiftUI, Combine, GraphQL, Apollo Client, Firebase" />
             </div>
           </div>
-        </Zoom>
+        </Fade>
 
         {/* Screenshots */}
         <div className="flex flex-col gap-16 py-8 items-center text-center">
-          <Zoom when={fadeTwo}>
+          <Fade bottom when={fadeTwo} distance="75px">
             <div className="flex flex-col gap-8 items-center sm:flex-row sm:gap-16">
               <img
                 src={volume_1}
@@ -144,11 +143,11 @@ function Volume() {
                 className="h-[86px] sm:h-[107px] lg:h-[128px]"
               />
             </div>
-          </Zoom>
+          </Fade>
         </div>
 
         {/* See More */}
-        <Fade when={fadeTwo}>
+        <Fade bottom when={fadeTwo} distance="75px">
           <div className="flex flex-col gap-8 items-center lg:gap-16 py-24">
             <h2 className="text-3xl font-bold text-center lg:text-4xl">
               More Projects

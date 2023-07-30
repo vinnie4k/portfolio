@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 function RecentPosts() {
   return (
-    <Fade>
+    <Fade bottom distance="75px">
       <div>
         <h2 className="text-3xl font-bold pb-2 text-center lg:text-5xl">
           Recent Posts

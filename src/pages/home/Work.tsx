@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 function Work() {
   return (
-    <Fade>
+    <Fade bottom distance="75px">
       <div className="text-center">
         <h2 className="text-3xl font-bold pb-2 sm:text-4xl lg:text-5xl">
           Work
