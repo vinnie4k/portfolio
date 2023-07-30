@@ -18,7 +18,7 @@ function DevSkills() {
             </h2>
             <p className="text-base text-gray pt-2 sm:text-xl">
               Proficient in creating full-stack web applications using
-              HTML/CSS/JS, ReactJS, Tailwind CSS and NodeJS.
+              HTML/CSS/JS, ReactJS, Tailwind CSS, Material UI and NodeJS.
             </p>
           </div>
         </div>
