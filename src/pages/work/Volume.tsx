@@ -36,11 +36,11 @@ function Volume() {
     <>
       {/* Lottie */}
       <div
-        className={`h-[calc(100vh-160px)] sm:h-[calc(100vh-224px)] flex items-center justify-center`}
+        className={`h-[calc(100vh-200px)] sm:h-[calc(100vh-224px)] flex items-center justify-center`}
       >
         <Lottie
           options={lottieSettings}
-          height={400}
+          height={window.innerWidth > 640 ? 350 : 250}
           eventListeners={[
             { eventName: "complete", callback: () => toggleIsStopped() },
           ]}
