@@ -1,9 +1,5 @@
 import WorkHeader from "./WorkHeader";
 import WorkTech from "./WorkTech";
-import uplift_1 from "/src/assets/projects/uplift/uplift_1.png";
-import uplift_2 from "/src/assets/projects/uplift/uplift_2.png";
-import uplift_3 from "/src/assets/projects/uplift/uplift_3.png";
-import uplift_4 from "/src/assets/projects/uplift/uplift_4.png";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
 
