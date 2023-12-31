@@ -9,6 +9,8 @@ import { Route, Routes } from "react-router-dom";
 import Grabbit from "./pages/work/Grabbit";
 import Savvy from "./pages/work/Savvy";
 import Scribbly from "./pages/work/Scribbly";
+import Status from "./pages/work/Status";
+import Uplift from "./pages/work/Uplift";
 import Volume from "./pages/work/Volume";
 
 // Blogs
@@ -52,6 +54,8 @@ function App() {
         <Route path="/work/savvy" element={<Savvy />}></Route>
         <Route path="/work/volume" element={<Volume />}></Route>
         <Route path="/work/scribbly" element={<Scribbly />}></Route>
+        <Route path="/work/uplift" element={<Uplift />}></Route>
+        <Route path="/work/status" element={<Status />}></Route>
       </Routes>
       <Footer />
     </div>

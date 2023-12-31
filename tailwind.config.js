@@ -9,6 +9,7 @@ export default {
         code: "#CA4238",
         cornell: "#D41F1F",
         github: "#333",
+        glassdoor: "#00b95c",
         gray: "#848482",
         instagram: "#C13584",
         linkedin: "#0072b1",
@@ -19,7 +20,10 @@ export default {
         white: "#FDFDFD",
       },
       fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
         rhdisplay: ["Red Hat Display", "sans-serif"],
+        "sf-pro-rounded-reg": ["sf-pro-rounded-reg", "sans-serif"],
+        "sf-pro-rounded-semi": ["sf-pro-rounded-semi", "sans-serif"],
       },
       fontSize: {
         "2.5xl": "1.75rem",

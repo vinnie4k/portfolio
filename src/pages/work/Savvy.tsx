@@ -13,6 +13,7 @@ import savvy_3_text from "/src/assets/projects/savvy/savvy_3_text.png";
 // Other Projects
 import grabbit from "/src/assets/projects/grabbit.png";
 import scribbly from "/src/assets/projects/scribbly.png";
+import uplift from "/src/assets/projects/uplift.png";
 import volume from "/src/assets/projects/volume.png";
 
 function Savvy() {
@@ -108,25 +109,48 @@ function Savvy() {
       </div>
 
       {/* See More */}
-      <Fade bottom distance="75px">
+      <Fade bottom distance="75px" when={fadeTwo}>
         <div className="flex flex-col gap-8 items-center lg:gap-16 py-24">
           <h2 className="text-3xl font-bold text-center lg:text-4xl">
             More Projects
           </h2>
-          <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 sm:justify-center">
-            <a href="/work/grabbit" className="w-72 lg:w-96">
-              <img src={grabbit} alt="Image of Grabbit" className="cell-link" />
-            </a>
-            <a href="/work/volume" className="w-72 lg:w-96">
-              <img src={volume} alt="Image of Volume" className="cell-link" />
-            </a>
-            <a href="/work/scribbly" className="w-72 lg:w-96">
-              <img
-                src={scribbly}
-                alt="Image of Scribbly"
-                className="cell-link"
-              />
-            </a>
+          <div className="flex flex-col max-sm:gap-8 max-sm:items-center sm:flex-row sm:gap-8 sm:justify-center">
+            <div className="flex flex-col max-sm:gap-8 sm:gap-8">
+              <Fade bottom distance="75px">
+                <a href="/work/grabbit" className="w-72 lg:w-96">
+                  <img
+                    src={grabbit}
+                    alt="Image of Grabbit"
+                    className="cell-link"
+                  />
+                </a>
+                <a href="/work/scribbly" className="w-72 lg:w-96">
+                  <img
+                    src={scribbly}
+                    alt="Image of Scribbly"
+                    className="cell-link"
+                  />
+                </a>
+              </Fade>
+            </div>
+            <div className="flex flex-col max-sm:gap-8 sm:gap-8">
+              <Fade bottom distance="75px">
+                <a href="/work/volume" className="w-72 lg:w-96">
+                  <img
+                    src={volume}
+                    alt="Image of Volume"
+                    className="cell-link"
+                  />
+                </a>
+                <a href="/work/uplift" className="w-72 lg:w-96">
+                  <img
+                    src={uplift}
+                    alt="Image of Uplift"
+                    className="cell-link"
+                  />
+                </a>
+              </Fade>
+            </div>
           </div>
         </div>
       </Fade>

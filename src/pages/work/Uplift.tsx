@@ -1,18 +1,19 @@
 import WorkHeader from "./WorkHeader";
 import WorkTech from "./WorkTech";
-import grabbit_1 from "/src/assets/projects/grabbit/grabbit_1.png";
-import grabbit_2 from "/src/assets/projects/grabbit/grabbit_2.png";
-import grabbit_3 from "/src/assets/projects/grabbit/grabbit_3.png";
+import uplift_1 from "/src/assets/projects/uplift/uplift_1.png";
+import uplift_2 from "/src/assets/projects/uplift/uplift_2.png";
+import uplift_3 from "/src/assets/projects/uplift/uplift_3.png";
+import uplift_4 from "/src/assets/projects/uplift/uplift_4.png";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
 
 // Other Projects
 import savvy from "/src/assets/projects/savvy.png";
 import scribbly from "/src/assets/projects/scribbly.png";
-import uplift from "/src/assets/projects/uplift.png";
+import status from "/src/assets/projects/status.png";
 import volume from "/src/assets/projects/volume.png";
 
-function Grabbit() {
+function Uplift() {
   const [fadeTwo, setFadeTwo] = useState(false);
   setTimeout(() => {
     if (!fadeTwo) {
@@ -26,9 +27,9 @@ function Grabbit() {
         {/* Header */}
         <WorkHeader
           type="iOS Application"
-          title="Grabbit"
-          appstoreURL="https://apps.apple.com/us/app/grabbit/id6450518666"
-          githubURL="https://github.com/vinnie4k/Grabbit"
+          title="Uplift"
+          appstoreURL="https://apps.apple.com/us/app/uplift-cornell-fitness/id1439374374"
+          githubURL="https://github.com/cuappdev/uplift-ios-swiftui"
         />
 
         {/* Description */}
@@ -36,22 +37,22 @@ function Grabbit() {
           <div className="flex flex-col gap-4 sm:gap-8">
             <div className="flex max-sm:flex-row max-sm:gap-10">
               <p className="sm:text-xl lg:text-2xl">
-                Pre-enroll didn't go so well? Are all of your classes full?
-                Grabbit is here to help!
+                Staying fit at Cornell is easier than ever! Our vision is to
+                provide the best college fitness and wellness resource for the
+                Cornell community.
               </p>
               <div className="sm:hidden">
-                <WorkTech techs="SwiftUI, NodeJS, Express, Firebase" />
+                <WorkTech techs="SwiftUI, Combine, GraphQL, PostgreSQL, Firebase" />
               </div>
             </div>
             <p className="sm:text-xl lg:text-2xl">
-              Search for your course through the app to begin tracking. Grabbit
-              will notify you when a spot opens up, and you can quickly copy the
-              section code and go to Student Center through the app. Sit back,
-              relax, and enable push notifications!
+              With Uplift, you can check gym hours and capacity, explore nearby
+              activities, and view all fitness classes. Start your fitness
+              journey today and download the app!
             </p>
           </div>
           <div className="max-sm:hidden">
-            <WorkTech techs="SwiftUI, NodeJS, Express, Firebase" />
+            <WorkTech techs="SwiftUI, Combine, GraphQL, PostgreSQL, Firebase" />
           </div>
         </div>
       </Fade>
@@ -59,47 +60,51 @@ function Grabbit() {
       {/* Screenshots */}
       <div className="flex flex-col gap-16 py-8 items-center text-center">
         <Fade bottom when={fadeTwo} distance="75px">
-          <div className="flex flex-col gap-4 items-center sm:flex-row-reverse sm:gap-16">
+          <div className="flex flex-col gap-4 items-center sm:flex-row sm:gap-16">
             <img
-              src={grabbit_1}
-              alt="Grabbit - search for your courses"
+              src={uplift_1}
+              alt="Uplift - View facility hours"
               className="h-[256px] sm:h-80 lg:h-96"
             />
-            <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl">
-              <span className="font-sf-pro-rounded-semi">search</span> for your
-              courses
+            <p className="font-montserrat text-2xl sm:text-3xl lg:text-5xl">
+              View facility <span className="font-bold">hours</span>
+            </p>
+          </div>
+        </Fade>
+        <Fade bottom when={fadeTwo} distance="75px">
+          <div className="flex flex-col gap-4 items-center sm:flex-row-reverse sm:gap-16">
+            <img
+              src={uplift_2}
+              alt="Uplift - Avoid packed gyms"
+              className="h-[256px] sm:h-80 lg:h-96"
+            />
+            <p className="font-montserrat text-2xl sm:text-3xl lg:text-5xl">
+              Avoid <span className="font-bold">packed</span> gyms
             </p>
           </div>
         </Fade>
         <Fade bottom when={fadeTwo} distance="75px">
           <div className="flex flex-col gap-4 items-center sm:flex-row sm:gap-16">
             <img
-              src={grabbit_2}
-              alt="Grabbit - one tap to track"
+              src={uplift_3}
+              alt="Uplift - Discover fitness classes"
               className="h-[256px] sm:h-80 lg:h-96"
             />
-            <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl">
-              one tap to <span className="font-sf-pro-rounded-semi">track</span>
+            <p className="font-montserrat text-2xl sm:text-3xl lg:text-5xl">
+              <span className="font-bold">Discover</span> fitness classes
             </p>
           </div>
         </Fade>
         <Fade bottom when={fadeTwo} distance="75px">
-          <div className="flex flex-col gap-4 items-center mb-8 sm:flex-row-reverse sm:gap-16">
+          <div className="flex flex-col gap-4 items-center sm:flex-row-reverse sm:gap-16">
             <img
-              src={grabbit_3}
-              alt="Grabbit - get notified instantly, copy code in one tap"
+              src={uplift_4}
+              alt="Uplift - Explore nearby activities"
               className="h-[256px] sm:h-80 lg:h-96"
             />
-            <div>
-              <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl sm:mb-2">
-                get notified{" "}
-                <span className="font-sf-pro-rounded-semi">instantly</span>,{" "}
-              </p>
-              <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl">
-                copy code in{" "}
-                <span className="font-sf-pro-rounded-semi">one tap</span>
-              </p>
-            </div>
+            <p className="font-montserrat text-2xl sm:text-3xl lg:text-5xl">
+              <span className="font-bold">Explore</span> nearby activities
+            </p>
           </div>
         </Fade>
       </div>
@@ -113,10 +118,10 @@ function Grabbit() {
           <div className="flex flex-col max-sm:gap-8 max-sm:items-center sm:flex-row sm:gap-8 sm:justify-center">
             <div className="flex flex-col max-sm:gap-8 sm:gap-8">
               <Fade bottom distance="75px">
-                <a href="/work/uplift" className="w-72 lg:w-96">
+                <a href="/work/status" className="w-72 lg:w-96">
                   <img
-                    src={uplift}
-                    alt="Image of Uplift"
+                    src={status}
+                    alt="Image of Status Page"
                     className="cell-link"
                   />
                 </a>
@@ -150,4 +155,4 @@ function Grabbit() {
   );
 }
 
-export default Grabbit;
+export default Uplift;

@@ -8,7 +8,8 @@ import Fade from "react-reveal/Fade";
 // Other Projects
 import grabbit from "/src/assets/projects/grabbit.png";
 import scribbly from "/src/assets/projects/scribbly.png";
-import savvy from "/src/assets/projects/savvy.png";
+import status from "/src/assets/projects/status.png";
+import uplift from "/src/assets/projects/uplift.png";
 
 // Images
 import volume_1 from "../../assets/projects/volume/volume_1.png";
@@ -68,7 +69,7 @@ function Volume() {
                   organizations? Volume is here for you!
                 </p>
                 <div className="sm:hidden">
-                  <WorkTech techs="SwiftUI, Combine, GraphQL, Apollo Client, Firebase" />
+                  <WorkTech techs="SwiftUI, Combine, GraphQL, MongoDB, Firebase" />
                 </div>
               </div>
               <p className="sm:text-xl lg:text-2xl">
@@ -79,7 +80,7 @@ function Volume() {
               </p>
             </div>
             <div className="max-sm:hidden">
-              <WorkTech techs="SwiftUI, Combine, GraphQL, Apollo Client, Firebase" />
+              <WorkTech techs="SwiftUI, Combine, GraphQL, MongoDB, Firebase" />
             </div>
           </div>
         </Fade>
@@ -144,24 +145,43 @@ function Volume() {
             <h2 className="text-3xl font-bold text-center lg:text-4xl">
               More Projects
             </h2>
-            <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 sm:justify-center">
-              <a href="/work/grabbit" className="w-72 lg:w-96">
-                <img
-                  src={grabbit}
-                  alt="Image of Grabbit"
-                  className="cell-link"
-                />
-              </a>
-              <a href="/work/savvy" className="w-72 lg:w-96">
-                <img src={savvy} alt="Image of Savvy" className="cell-link" />
-              </a>
-              <a href="/work/scribbly" className="w-72 lg:w-96">
-                <img
-                  src={scribbly}
-                  alt="Image of Scribbly"
-                  className="cell-link"
-                />
-              </a>
+            <div className="flex flex-col max-sm:gap-8 max-sm:items-center sm:flex-row sm:gap-8 sm:justify-center">
+              <div className="flex flex-col max-sm:gap-8 sm:gap-8">
+                <Fade bottom distance="75px">
+                  <a href="/work/uplift" className="w-72 lg:w-96">
+                    <img
+                      src={uplift}
+                      alt="Image of Uplift"
+                      className="cell-link"
+                    />
+                  </a>
+                  <a href="/work/grabbit" className="w-72 lg:w-96">
+                    <img
+                      src={grabbit}
+                      alt="Image of Grabbit"
+                      className="cell-link"
+                    />
+                  </a>
+                </Fade>
+              </div>
+              <div className="flex flex-col max-sm:gap-8 sm:gap-8">
+                <Fade bottom distance="75px">
+                  <a href="/work/status" className="w-72 lg:w-96">
+                    <img
+                      src={status}
+                      alt="Image of Status Page"
+                      className="cell-link"
+                    />
+                  </a>
+                  <a href="/work/scribbly" className="w-72 lg:w-96">
+                    <img
+                      src={scribbly}
+                      alt="Image of Scribbly"
+                      className="cell-link"
+                    />
+                  </a>
+                </Fade>
+              </div>
             </div>
           </div>
         </Fade>

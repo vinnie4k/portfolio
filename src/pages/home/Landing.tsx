@@ -50,6 +50,12 @@ function Landing() {
                   Cornell AppDev
                 </a>
               </span>
+              . Incoming iOS Engineer Intern at{" "}
+              <span className="text-glassdoor font-medium">
+                <a href="https://www.glassdoor.com/" className="url-link">
+                  Glassdoor
+                </a>
+              </span>
               .
             </p>
           </Fade>

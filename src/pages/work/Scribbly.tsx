@@ -8,6 +8,7 @@ import Fade from "react-reveal/Fade";
 // Other Projects
 import grabbit from "/src/assets/projects/grabbit.png";
 import savvy from "/src/assets/projects/savvy.png";
+import uplift from "/src/assets/projects/uplift.png";
 import volume from "/src/assets/projects/volume.png";
 
 // Images
@@ -92,10 +93,10 @@ function Scribbly() {
                 className="h-[256px] sm:h-80 lg:h-96"
               />
               <div>
-                <p className="text-2xl sm:text-3xl lg:text-5xl sm:mb-2 font-semibold">
+                <p className="font-sf-pro-rounded-semi text-2xl sm:text-3xl lg:text-5xl sm:mb-2">
                   new prompt everyday
                 </p>
-                <p className="text-2xl sm:text-3xl lg:text-5xl text-gray">
+                <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl text-gray">
                   start anytime you want
                 </p>
               </div>
@@ -109,10 +110,10 @@ function Scribbly() {
                 className="h-[256px] sm:h-80 lg:h-96"
               />
               <div>
-                <p className="text-2xl sm:text-3xl lg:text-5xl sm:mb-2 font-semibold">
+                <p className="font-sf-pro-rounded-semi text-2xl sm:text-3xl lg:text-5xl sm:mb-2">
                   discover other artwork
                 </p>
-                <p className="text-2xl sm:text-3xl lg:text-5xl text-gray">
+                <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl text-gray">
                   keep them accountable
                 </p>
               </div>
@@ -126,10 +127,10 @@ function Scribbly() {
                 className="h-[256px] sm:h-80 lg:h-96"
               />
               <div>
-                <p className="text-2xl sm:text-3xl lg:text-5xl sm:mb-2 font-semibold">
+                <p className="font-sf-pro-rounded-semi text-2xl sm:text-3xl lg:text-5xl sm:mb-2">
                   your art journey
                 </p>
-                <p className="text-2xl sm:text-3xl lg:text-5xl text-gray">
+                <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl text-gray">
                   all in one place
                 </p>
               </div>
@@ -143,10 +144,10 @@ function Scribbly() {
                 className="h-[256px] sm:h-80 lg:h-96"
               />
               <div>
-                <p className="text-2xl sm:text-3xl lg:text-5xl sm:mb-2 font-semibold">
+                <p className="font-sf-pro-rounded-semi text-2xl sm:text-3xl lg:text-5xl sm:mb-2">
                   form a community
                 </p>
-                <p className="text-2xl sm:text-3xl lg:text-5xl text-gray">
+                <p className="font-sf-pro-rounded-reg text-2xl sm:text-3xl lg:text-5xl text-gray">
                   interact with others
                 </p>
               </div>
@@ -160,20 +161,43 @@ function Scribbly() {
             <h2 className="text-3xl font-bold text-center lg:text-4xl">
               More Projects
             </h2>
-            <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 sm:justify-center">
-              <a href="/work/volume" className="w-72 lg:w-96">
-                <img src={volume} alt="Image of Volume" className="cell-link" />
-              </a>
-              <a href="/work/savvy" className="w-72 lg:w-96">
-                <img src={savvy} alt="Image of Savvy" className="cell-link" />
-              </a>
-              <a href="/work/grabbit" className="w-72 lg:w-96">
-                <img
-                  src={grabbit}
-                  alt="Image of Grabbit"
-                  className="cell-link"
-                />
-              </a>
+            <div className="flex flex-col max-sm:gap-8 max-sm:items-center sm:flex-row sm:gap-8 sm:justify-center">
+              <div className="flex flex-col max-sm:gap-8 sm:gap-8">
+                <Fade bottom distance="75px">
+                  <a href="/work/uplift" className="w-72 lg:w-96">
+                    <img
+                      src={uplift}
+                      alt="Image of Uplift"
+                      className="cell-link"
+                    />
+                  </a>
+                  <a href="/work/volume" className="w-72 lg:w-96">
+                    <img
+                      src={volume}
+                      alt="Image of Volume"
+                      className="cell-link"
+                    />
+                  </a>
+                </Fade>
+              </div>
+              <div className="flex flex-col max-sm:gap-8 sm:gap-8">
+                <Fade bottom distance="75px">
+                  <a href="/work/grabbit" className="w-72 lg:w-96">
+                    <img
+                      src={grabbit}
+                      alt="Image of Grabbit"
+                      className="cell-link"
+                    />
+                  </a>
+                  <a href="/work/savvy" className="w-72 lg:w-96">
+                    <img
+                      src={savvy}
+                      alt="Image of Savvy"
+                      className="cell-link"
+                    />
+                  </a>
+                </Fade>
+              </div>
             </div>
           </div>
         </Fade>

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "sf-pro-rounded-semi";
+  src: url("assets/fonts/SF-Pro-Rounded-Semibold.otf");
+}
+
+@font-face {
+  font-family: "sf-pro-rounded-reg";
+  src: url("assets/fonts/SF-Pro-Rounded-Regular.otf");
+}
+
 @layer components {
   .url-link {
     @apply hover:cursor-pointer hover:opacity-80 transition ease-in;
